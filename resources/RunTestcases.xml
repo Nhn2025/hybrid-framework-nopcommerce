@@ -6,4 +6,5 @@
             <class name="com.nopcommerce.account.Account_01_Register"/>
         </classes>
     </test>
+
 </suite>
