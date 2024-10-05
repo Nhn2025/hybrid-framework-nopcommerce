@@ -6,14 +6,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.Random;
 
-public class Account_01_Register {
-    WebDriver driver;
-    //String projectPath = System.getProperty("user.dir");
+public class Level_01_DRY {
+    private WebDriver driver;
 
     @BeforeClass
     public void beforeClass() {

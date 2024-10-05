@@ -17,7 +17,9 @@ import java.util.Random;
 import java.util.Set;
 
 public class BasePage {
-    WebDriver driver;
+    public static BasePage getBasePage() {
+        return new BasePage();
+    }
 
     public void openPageUrl(WebDriver driver, String pageUrl) {
         driver.get(pageUrl);
@@ -67,7 +69,7 @@ public class BasePage {
         waitForAlertPresence(driver).sendKeys(keysToSend);
     }
 
-    public void switchToWindowByID(String expectedID) {
+    public void switchToWindowByID(WebDriver driver, String expectedID) {
         Set<String> allIDs = driver.getWindowHandles();
         for (String id : allIDs)
             if (id.equals(expectedID)) {
@@ -76,7 +78,7 @@ public class BasePage {
             }
     }
 
-    public void switchToWindowByTitle(String expectedTitle) {
+    public void switchToWindowByTitle(WebDriver driver, String expectedTitle) {
         Set<String> allIDs = driver.getWindowHandles();
         for (String id : allIDs) {
             driver.switchTo().window(id);
@@ -87,7 +89,7 @@ public class BasePage {
         }
     }
 
-    public void closeAllWindowWithoutParent(String parentID) {
+    public void closeAllWindowWithoutParent(WebDriver driver, String parentID) {
         Set<String> allIDs = driver.getWindowHandles();
         for (String id : allIDs)
             if (!id.equals(parentID))  {
