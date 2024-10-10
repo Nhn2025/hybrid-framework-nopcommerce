@@ -29,6 +29,7 @@ public class Level_01_DRY {
         Assert.assertEquals(driver.findElement(By.cssSelector("span#FirstName-error")).getText(), "First name is required.");
         Assert.assertEquals(driver.findElement(By.cssSelector("span#LastName-error")).getText(), "Last name is required.");
         Assert.assertEquals(driver.findElement(By.cssSelector("span#Email-error")).getText(), "Email is required.");
+        Assert.assertEquals(driver.findElement(By.cssSelector("span#Password-error")).getText(), "Password is required.");
         Assert.assertEquals(driver.findElement(By.cssSelector("span#ConfirmPassword-error")).getText(), "Password is required.");
     }
 
@@ -94,8 +95,6 @@ public class Level_01_DRY {
         driver.findElement(By.cssSelector("button#register-button")).click();
 
         Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
-
-
     }
 
     @AfterClass
