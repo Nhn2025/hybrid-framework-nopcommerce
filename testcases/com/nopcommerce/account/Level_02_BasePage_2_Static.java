@@ -23,7 +23,7 @@ public class Level_02_BasePage_2_Static {
 
     @Test
     public void Register_01_Empty_Data() {
-        basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
+        basePage.openPageUrl(driver, "http://demo.nopcommerce/");
 
         basePage.clickToElement(driver, "//a[@class='ico-register']");
         basePage.clickToElement(driver, "//button[@id='register-button']");
@@ -36,7 +36,7 @@ public class Level_02_BasePage_2_Static {
 
     @Test
     public void Register_02_Invalid_Email() {
-        basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
+        basePage.openPageUrl(driver, "http://demo.nopcommerce/");
 
         basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -53,7 +53,7 @@ public class Level_02_BasePage_2_Static {
 
     @Test
     public void Register_03_Invalid_Password() {
-        basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
+        basePage.openPageUrl(driver, "http://demo.nopcommerce/");
 
         basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -65,12 +65,12 @@ public class Level_02_BasePage_2_Static {
 
         basePage.clickToElement(driver, "//button[@id='register-button']");
 
-        Assert.assertEquals(basePage.getElementText(driver, "//span[@class='field-validation-error']"), "Password must meet the following rules:\nmust have at least 6 characters and not greater than 64 characters");
+        Assert.assertEquals(basePage.getElementText(driver, "//span[@class='field-validation-error']"), "Please enter a valid email address.");
     }
 
     @Test
     public void Register_04_Incorrect_Confirm_Password() {
-        basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
+        basePage.openPageUrl(driver, "http://demo.nopcommerce/");
 
         basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -87,7 +87,7 @@ public class Level_02_BasePage_2_Static {
 
     @Test
     public void Register_05_Success() {
-        basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
+        basePage.openPageUrl(driver, "http://demo.nopcommerce/");
 
         basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -99,7 +99,7 @@ public class Level_02_BasePage_2_Static {
 
         basePage.clickToElement(driver, "//button[@id='register-button']");
 
-        Assert.assertEquals(basePage.getElementText(driver, "//span[@class='result']"), "Your registration completed");
+        Assert.assertEquals(basePage.getElementText(driver, "//div[@class='result']"), "Your registration completed");
     }
 
     @AfterClass

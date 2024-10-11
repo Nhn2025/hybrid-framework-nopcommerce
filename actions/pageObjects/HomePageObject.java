@@ -7,7 +7,7 @@ import pageUIs.HomePageUI;
 public class HomePageObject extends BasePage {
     WebDriver driver;
 
-    public HomePageObject(WebDriver driverPageObject) {
+    public HomePageObject(WebDriver driver) {
         this.driver = driver;
     }
 

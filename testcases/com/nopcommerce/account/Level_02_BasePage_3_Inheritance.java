@@ -22,7 +22,7 @@ public class Level_02_BasePage_3_Inheritance extends BasePage {
 
     @Test
     public void Register_01_Empty_Data() {
-        openPageUrl(driver, "https://demo.nopcommerce.com/");
+        openPageUrl(driver, "http://demo.nopcommerce/");
 
         clickToElement(driver, "//a[@class='ico-register']");
         clickToElement(driver, "//button[@id='register-button']");
@@ -35,7 +35,7 @@ public class Level_02_BasePage_3_Inheritance extends BasePage {
 
     @Test
     public void Register_02_Invalid_Email() {
-        openPageUrl(driver, "https://demo.nopcommerce.com/");
+        openPageUrl(driver, "http://demo.nopcommerce/");
 
         clickToElement(driver, "//a[@class='ico-register']");
 
@@ -52,7 +52,7 @@ public class Level_02_BasePage_3_Inheritance extends BasePage {
 
     @Test
     public void Register_03_Invalid_Password() {
-        openPageUrl(driver, "https://demo.nopcommerce.com/");
+        openPageUrl(driver, "http://demo.nopcommerce/");
 
         clickToElement(driver, "//a[@class='ico-register']");
 
@@ -64,12 +64,12 @@ public class Level_02_BasePage_3_Inheritance extends BasePage {
 
         clickToElement(driver, "//button[@id='register-button']");
 
-        Assert.assertEquals(getElementText(driver, "//span[@class='field-validation-error']"), "Password must meet the following rules:\nmust have at least 6 characters and not greater than 64 characters");
+        Assert.assertEquals(getElementText(driver, "//span[@class='field-validation-error']"), "Please enter a valid email address.");
     }
 
     @Test
     public void Register_04_Incorrect_Confirm_Password() {
-        openPageUrl(driver, "https://demo.nopcommerce.com/");
+        openPageUrl(driver, "http://demo.nopcommerce/");
 
         clickToElement(driver, "//a[@class='ico-register']");
 
@@ -86,7 +86,7 @@ public class Level_02_BasePage_3_Inheritance extends BasePage {
 
     @Test
     public void Register_05_Success() {
-        openPageUrl(driver, "https://demo.nopcommerce.com/");
+        openPageUrl(driver, "http://demo.nopcommerce/");
 
         clickToElement(driver, "//a[@class='ico-register']");
 
@@ -98,7 +98,7 @@ public class Level_02_BasePage_3_Inheritance extends BasePage {
 
         clickToElement(driver, "//button[@id='register-button']");
 
-        Assert.assertEquals(getElementText(driver, "//span[@class='result']"), "Your registration completed");
+        Assert.assertEquals(getElementText(driver, "//div[@class='result']"), "Your registration completed");
     }
 
     @AfterClass

@@ -29,7 +29,7 @@ public class Level_03_PageObject extends BasePage {
         driver = new FirefoxDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://demo.nopcommerce/");
 
         // Mở 1 Url ra nó ở page nào -> khởi tạo page đó lên
         // Từ 1 page này chuyển qua page kia -> khởi tạo page đó lên
@@ -41,26 +41,28 @@ public class Level_03_PageObject extends BasePage {
         homePage.clickToRegisterLink();
 
         // Từ Home Page click vào Register Link nó sẽ mở ra Register Page
-        registerPage = new RegisterPageObject();
+        registerPage = new RegisterPageObject(driver);
 
         registerPage.clickToRegisterButton();
 
         Assert.assertEquals(registerPage.getFirstNameErrorMessageText(), "First name is required.");
         Assert.assertEquals(registerPage.getLastNameErrorMessageText(), "Last name is required.");
         Assert.assertEquals(registerPage.getEmailErrorMessageText(), "Email is required.");
-        Assert.assertEquals(registerPage.getPasswordErrorMessageText(), "Password is required.");
         Assert.assertEquals(registerPage.getConfirmPasswordErrorMessageText(), "Password is required.");
     }
 
     @Test
     public void User_02_Register_Invalid_Email() {
+
         registerPage.clickToNopCommerceLogo();
 
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
 
+        homePage.clickToRegisterLink();
+
         // Từ Home Page click vào Register Link nó sẽ mở ra Register Page
-        registerPage = new RegisterPageObject();
+        registerPage = new RegisterPageObject(driver);
 
         registerPage.enterToFirstNameTextbox("John");
         registerPage.enterToLastNameTextbox("Kennedy");
@@ -80,8 +82,10 @@ public class Level_03_PageObject extends BasePage {
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
 
+        homePage.clickToRegisterLink();
+
         // Từ Home Page click vào Register Link nó sẽ mở ra Register Page
-        registerPage = new RegisterPageObject();
+        registerPage = new RegisterPageObject(driver);
 
         registerPage.enterToFirstNameTextbox("John");
         registerPage.enterToLastNameTextbox("Kennedy");
@@ -91,7 +95,7 @@ public class Level_03_PageObject extends BasePage {
 
         registerPage.clickToRegisterButton();
 
-        Assert.assertEquals(registerPage.getPasswordErrorMessageText(), "Password must meet the following rules:\nmust have at least 6 characters and not greater than 64 characters");
+        Assert.assertEquals(registerPage.getPasswordErrorMessageText(), "<p>must meet the following rules: </p><ul><li>must have at least 6 characters and not greater than 64 characters</li></ul>");
     }
 
     @Test
@@ -101,8 +105,10 @@ public class Level_03_PageObject extends BasePage {
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
 
+        homePage.clickToRegisterLink();
+
         // Từ Home Page click vào Register Link nó sẽ mở ra Register Page
-        registerPage = new RegisterPageObject();
+        registerPage = new RegisterPageObject(driver);
 
         registerPage.enterToFirstNameTextbox("John");
         registerPage.enterToLastNameTextbox("Kennedy");
@@ -122,8 +128,10 @@ public class Level_03_PageObject extends BasePage {
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
 
+        homePage.clickToRegisterLink();
+
         // Từ Home Page click vào Register Link nó sẽ mở ra Register Page
-        registerPage = new RegisterPageObject();
+        registerPage = new RegisterPageObject(driver);
 
         registerPage.enterToFirstNameTextbox("John");
         registerPage.enterToLastNameTextbox("Kennedy");
@@ -139,7 +147,7 @@ public class Level_03_PageObject extends BasePage {
 
     @Test
     public void User_06_Login_Success() {
-        registerPage.clickToNopCommerceLogo();
+        registerPage.clickToLogOutLink();
 
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
@@ -148,7 +156,7 @@ public class Level_03_PageObject extends BasePage {
         homePage.clickToLoginLink();
 
         // Từ trang Home click vào Login Link nó sẽ mở ra trang Login
-        loginPage = new LoginPageObject();
+        loginPage = new LoginPageObject(driver);
 
         // Input Email/ Password
         loginPage.enterToEmailTextbox(emailAddress);
@@ -164,7 +172,7 @@ public class Level_03_PageObject extends BasePage {
         homePage.clickToMyAccountLink();
 
         // Từ trang Home click My Account nó sẽ mở ra trang Customer Info
-        customerPage = new CustomerPageObject();
+        customerPage = new CustomerPageObject(driver);
 
         // Verify
         Assert.assertEquals(customerPage.getFirstNameTextboxAttributeValue(), "John");

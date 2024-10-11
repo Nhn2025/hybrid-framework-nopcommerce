@@ -1,42 +1,83 @@
 package pageObjects;
 
-public class RegisterPageObject {
+import commons.BasePage;
+import org.openqa.selenium.WebDriver;
+import pageUIs.RegisterPageUI;
+
+public class RegisterPageObject extends BasePage {
+    WebDriver driver;
+
+    public RegisterPageObject(WebDriver driver) {
+        this.driver = driver;
+    }
+
     public void clickToRegisterButton() {
+        waitForElementClickable(driver, RegisterPageUI.REGISTER_BUTTON);
+        clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
     }
 
-    public byte[] getFirstNameErrorMessageText() {
+    public String getFirstNameErrorMessageText() {
+        waitForElementVisible(driver, RegisterPageUI.FIRSTNAME_ERROR_MSG);
+        return getElementText(driver, RegisterPageUI.FIRSTNAME_ERROR_MSG);
     }
 
-    public byte[] getLastNameErrorMessageText() {
+    public String getLastNameErrorMessageText() {
+        waitForElementVisible(driver, RegisterPageUI.LASTNAME_ERROR_MSG);
+        return getElementText(driver, RegisterPageUI.LASTNAME_ERROR_MSG);
     }
 
-    public byte[] getEmailErrorMessageText() {
+    public String getEmailErrorMessageText() {
+        waitForElementVisible(driver, RegisterPageUI.EMAIL_ERROR_MSG);
+        return getElementText(driver, RegisterPageUI.EMAIL_ERROR_MSG);
     }
 
-    public byte[] getPasswordErrorMessageText() {
+    public String getPasswordErrorMessageText() {
+        waitForElementVisible(driver, RegisterPageUI.PASSWORD_ERROR_MSG);
+        return getElementText(driver, RegisterPageUI.PASSWORD_ERROR_MSG);
     }
 
-    public byte[] getConfirmPasswordErrorMessageText() {
+    public String getConfirmPasswordErrorMessageText() {
+        waitForElementVisible(driver, RegisterPageUI.CONFIRM_PASSWORD_ERROR_MSG);
+        return getElementText(driver, RegisterPageUI.CONFIRM_PASSWORD_ERROR_MSG);
     }
 
     public void clickToNopCommerceLogo() {
+        waitForElementClickable(driver, RegisterPageUI.NOP_COMMERCE_LOGO);
+        clickToElement(driver, RegisterPageUI.NOP_COMMERCE_LOGO);
     }
 
-    public void enterToFirstNameTextbox(String john) {
+    public void clickToLogOutLink() {
+        waitForElementClickable(driver, RegisterPageUI.LOG_OUT_BUTTON);
+        clickToElement(driver, RegisterPageUI.LOG_OUT_BUTTON);
     }
 
-    public void enterToLastNameTextbox(String kennedy) {
+    public void enterToFirstNameTextbox(String firstNameValue) {
+        waitForElementClickable(driver, RegisterPageUI.FIRSTNAME_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.FIRSTNAME_TEXTBOX, firstNameValue);
     }
 
-    public void enterToEmailTextbox(String s) {
+    public void enterToLastNameTextbox(String lastNameValue) {
+        waitForElementClickable(driver, RegisterPageUI.LASTNAME_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.LASTNAME_TEXTBOX, lastNameValue);
     }
 
-    public void enterToPasswordTextbox(String number) {
+    public void enterToEmailTextbox(String emailAddressValue) {
+        waitForElementClickable(driver, RegisterPageUI.EMAIL_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, emailAddressValue);
     }
 
-    public void enterToConfirmPasswordTextbox(String number) {
+    public void enterToPasswordTextbox(String passwordValue) {
+        waitForElementClickable(driver, RegisterPageUI.PASSWORD_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, passwordValue);
     }
 
-    public byte[] getRegisterSuccessMessageText() {
+    public void enterToConfirmPasswordTextbox(String passwordValue) {
+        waitForElementClickable(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, passwordValue);
+    }
+
+    public String getRegisterSuccessMessageText() {
+        waitForElementVisible(driver, RegisterPageUI.REGISTRATION_COMPLETED_MSG);
+        return getElementText(driver, RegisterPageUI.REGISTRATION_COMPLETED_MSG);
     }
 }

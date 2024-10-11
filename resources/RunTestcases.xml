@@ -3,10 +3,7 @@
 
     <test name="Run on Firefox">
         <classes>
-            <class name="com.nopcommerce.account.Level_01_DRY"/>
-            <class name="com.nopcommerce.account.Level_02_BasePage_1_Init"/>
-            <class name="com.nopcommerce.account.Level_02_BasePage_2_Static"/>
-            <class name="com.nopcommerce.account.Level_02_BasePage_3_Inheritance"/>
+            <class name="com.nopcommerce.account.Level_03_PageObject"/>
         </classes>
     </test>
 

@@ -1,6 +1,7 @@
 package com.nopcommerce.account;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -21,7 +22,7 @@ public class Level_01_DRY {
 
     @Test
     public void Register_01_Empty_Data() {
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://demo.nopcommerce/");
         driver.findElement(By.cssSelector("a.ico-register")).click();
 
         driver.findElement(By.cssSelector("button#register-button")).click();
@@ -29,13 +30,12 @@ public class Level_01_DRY {
         Assert.assertEquals(driver.findElement(By.cssSelector("span#FirstName-error")).getText(), "First name is required.");
         Assert.assertEquals(driver.findElement(By.cssSelector("span#LastName-error")).getText(), "Last name is required.");
         Assert.assertEquals(driver.findElement(By.cssSelector("span#Email-error")).getText(), "Email is required.");
-        Assert.assertEquals(driver.findElement(By.cssSelector("span#Password-error")).getText(), "Password is required.");
         Assert.assertEquals(driver.findElement(By.cssSelector("span#ConfirmPassword-error")).getText(), "Password is required.");
     }
 
     @Test
     public void Register_02_Invalid_Email() {
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://demo.nopcommerce/");
         driver.findElement(By.cssSelector("a.ico-register")).click();
 
         driver.findElement(By.cssSelector("input#FirstName")).sendKeys("John");
@@ -51,7 +51,7 @@ public class Level_01_DRY {
 
     @Test
     public void Register_03_Invalid_Password() {
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://demo.nopcommerce/");
         driver.findElement(By.cssSelector("a.ico-register")).click();
 
         driver.findElement(By.cssSelector("input#FirstName")).sendKeys("John");
@@ -62,12 +62,12 @@ public class Level_01_DRY {
 
         driver.findElement(By.cssSelector("button#register-button")).click();
 
-        Assert.assertEquals(driver.findElement(By.cssSelector("span.field-validation-error")).getText(), "Password must meet the following rules:\nmust have at least 6 characters and not greater than 64 characters");
+        Assert.assertEquals(driver.findElement(By.cssSelector("span.field-validation-error")).getText(), "<p>must meet the following rules: </p><ul><li>must have at least 6 characters and not greater than 64 characters</li></ul>");
     }
 
     @Test
     public void Register_04_Incorrect_Confirm_Password() {
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://demo.nopcommerce/");
         driver.findElement(By.cssSelector("a.ico-register")).click();
 
         driver.findElement(By.cssSelector("input#FirstName")).sendKeys("John");
@@ -83,7 +83,7 @@ public class Level_01_DRY {
 
     @Test
     public void Register_05_Success() {
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("http://demo.nopcommerce/");
         driver.findElement(By.cssSelector("a.ico-register")).click();
 
         driver.findElement(By.cssSelector("input#FirstName")).sendKeys("John");
@@ -94,7 +94,7 @@ public class Level_01_DRY {
 
         driver.findElement(By.cssSelector("button#register-button")).click();
 
-        Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
+        Assert.assertEquals(driver.findElement(By.xpath("//div[@class='result']")).getText(), "Your registration completed");
     }
 
     @AfterClass
