@@ -1,22 +1,25 @@
 package com.nopcommerce.account;
 
 import commons.BasePage;
+import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.CustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
-import pageUIs.RegisterPageUI;
 
 import java.time.Duration;
 import java.util.Random;
 
-public class Level_03_PageObject {
+public class Level_04_Multiple_Browser extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
@@ -24,20 +27,18 @@ public class Level_03_PageObject {
     private CustomerPageObject customerPage;
     private String emailAddress = getEmailRandom();
 
+    @Parameters("browser")
     @BeforeClass
-    public void beforeClass() {
-        driver = new FirefoxDriver();
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("http://demo.nopcommerce/");
-
-        // Mở 1 Url ra nó ở page nào -> khởi tạo page đó lên
-        // Từ 1 page này chuyển qua page kia -> khởi tạo page đó lên
-        homePage = new HomePageObject(driver);
+    public void beforeClass(String browserName) {
+        driver = getBrowserDriver(browserName);
     }
 
     @Test
     public void User_01_Register_Empty_Data() {
+        // Mở 1 Url ra nó ở page nào -> khởi tạo page đó lên
+        // Từ 1 page này chuyển qua page kia -> khởi tạo page đó lên
+        homePage = new HomePageObject(driver);
+
         homePage.clickToRegisterLink();
 
         // Từ Home Page click vào Register Link nó sẽ mở ra Register Page
@@ -182,12 +183,6 @@ public class Level_03_PageObject {
 
     @AfterClass
     public void afterClass() {
-        driver.quit();
+        closeBrowser();
     }
-
-    public String getEmailRandom() {
-        Random rand = new Random();
-        return "john" + rand.nextInt(99999) + "@kennedy.us";
-    }
-
 }
