@@ -1,6 +1,5 @@
 package com.nopcommerce.account;
 
-import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -11,12 +10,11 @@ import pageObjects.CustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
-import pageUIs.RegisterPageUI;
 
 import java.time.Duration;
 import java.util.Random;
 
-public class Level_03_PageObject {
+public class Level_03_Selenium_Page_Object {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;

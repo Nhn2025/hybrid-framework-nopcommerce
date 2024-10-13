@@ -21,7 +21,7 @@ public class BaseTest {
             driver = new FirefoxDriver();
         else if (browser == BrowserList.CHROME)
             driver = new ChromeDriver();
-        else if (browser == BrowserList.EDEGE)
+        else if (browser == BrowserList.EDGE)
             driver = new EdgeDriver();
         else
             throw new RuntimeException("Browser name is not valid.");
