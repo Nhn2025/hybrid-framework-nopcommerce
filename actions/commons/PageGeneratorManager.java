@@ -1,10 +1,8 @@
 package commons;
 
+import com.beust.ah.A;
 import org.openqa.selenium.WebDriver;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.*;
 
 public class PageGeneratorManager {
 
@@ -22,6 +20,18 @@ public class PageGeneratorManager {
 
     public static CustomerPageObject getCustomerPage(WebDriver driver) {
         return new CustomerPageObject(driver);
+    }
+
+    public static AddressPageObject getAddressPage(WebDriver driver) {
+        return new AddressPageObject(driver);
+    }
+
+    public static RewardPointPageObject getRewardPointPage(WebDriver driver) {
+        return new RewardPointPageObject(driver);
+    }
+
+    public static OrderPageObject getOrderPage(WebDriver driver) {
+        return new OrderPageObject(driver);
     }
 
 }

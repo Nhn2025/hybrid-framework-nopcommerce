@@ -1,7 +1,9 @@
 package pageObjects;
 
 import commons.BasePage;
+import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
+import pageUIs.AddressPageUI;
 import pageUIs.CustomerPageUI;
 
 public class CustomerPageObject extends BasePage {
@@ -25,4 +27,5 @@ public class CustomerPageObject extends BasePage {
         waitForElementVisible(driver, CustomerPageUI.EMAIL_TEXTBOX);
         return getElementAtrribute(driver, CustomerPageUI.EMAIL_TEXTBOX, "value");
     }
+
 }
