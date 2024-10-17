@@ -13,7 +13,6 @@ import java.util.Set;
 
 public class BasePageFactory {
 
-
     protected void openPageUrl(WebDriver driver, String pageUrl) {
         driver.get(pageUrl);
     }

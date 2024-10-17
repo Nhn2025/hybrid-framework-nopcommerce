@@ -9,10 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import pageObjects.AddressPageObject;
-import pageObjects.CustomerPageObject;
-import pageObjects.OrderPageObject;
-import pageObjects.RewardPointPageObject;
+import pageObjects.*;
 import pageUIs.AddressPageUI;
 import pageUIs.CustomerPageUI;
 import pageUIs.OrderPageUI;
@@ -375,4 +372,27 @@ public class BasePage {
         return PageGeneratorManager.getCustomerPage(driver);
     }
 
+    public SiteMapPageObject openSiteMapPage(WebDriver driver) {
+        waitForElementClickable(driver, PageBaseUI.SITE_MAP_LINK_TEXT);
+        clickToElement(driver, PageBaseUI.SITE_MAP_LINK_TEXT);
+        return PageGeneratorManager.getSiteMapPage(driver);
+    }
+
+    public ShoppingCartPageObject openShoppingCartPage(WebDriver driver) {
+        waitForElementClickable(driver, PageBaseUI.SHOPPING_CART_LINK_TEXT);
+        clickToElement(driver, PageBaseUI.SHOPPING_CART_LINK_TEXT);
+        return PageGeneratorManager.getShoppingCartPage(driver);
+    }
+
+    public SearchPageObject openSearchPage(WebDriver driver) {
+        waitForElementClickable(driver, PageBaseUI.SEARCH_LINK_TEXT);
+        clickToElement(driver, PageBaseUI.SEARCH_LINK_TEXT);
+        return PageGeneratorManager.getSearchPage(driver);
+    }
+
+    public WishlistPageObject openWishlistPage(WebDriver driver) {
+        waitForElementClickable(driver, PageBaseUI.WISHLIST_LINK_TEXT);
+        clickToElement(driver, PageBaseUI.WISHLIST_LINK_TEXT);
+        return PageGeneratorManager.getWishlistPage(driver);
+    }
 }

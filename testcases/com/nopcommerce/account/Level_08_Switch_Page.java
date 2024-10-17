@@ -19,6 +19,10 @@ public class Level_08_Switch_Page extends BaseTest {
     private OrderPageObject orderPage;
     private RewardPointPageObject rewardPointPage;
     private AddressPageObject addressPage;
+    private SiteMapPageObject siteMapPage;
+    private ShoppingCartPageObject shoppingCartPage;
+    private SearchPageObject searchPage;
+    private WishlistPageObject wishlistPage;
     private String emailAddress = getEmailRandom();
 
     @Parameters("browser")
@@ -87,6 +91,21 @@ public class Level_08_Switch_Page extends BaseTest {
 
         // Customer Page -> Reward Point Page
         rewardPointPage = customerPage.openRewardPointPage(driver);
+    }
+
+    @Test
+    public void User_04_Switch_Page_Exercise() {
+        // Reward Point Page -> Site Map Page
+        siteMapPage = rewardPointPage.openSiteMapPage(driver);
+
+        // Site Map Page -> Shopping Cart Page
+        shoppingCartPage = siteMapPage.openShoppingCartPage(driver);
+
+        // Shopping Cart Page -> Search Page
+        searchPage = shoppingCartPage.openSearchPage(driver);
+
+        // Search Page -> Wishlist Page
+        wishlistPage = searchPage.openWishlistPage(driver);
     }
 
     @AfterClass

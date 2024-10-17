@@ -34,4 +34,20 @@ public class PageGeneratorManager {
         return new OrderPageObject(driver);
     }
 
+    public static WishlistPageObject getWishlistPage(WebDriver driver) {
+        return new WishlistPageObject(driver);
+    }
+
+    public static SearchPageObject getSearchPage(WebDriver driver) {
+        return new SearchPageObject(driver);
+    }
+
+    public static ShoppingCartPageObject getShoppingCartPage(WebDriver driver) {
+        return new ShoppingCartPageObject(driver);
+    }
+
+    public static SiteMapPageObject getSiteMapPage(WebDriver driver) {
+        return new SiteMapPageObject(driver);
+    }
+
 }
