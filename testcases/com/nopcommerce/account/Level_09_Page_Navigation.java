@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.user.*;
 
-public class Level_08_Switch_Page extends BaseTest {
+public class Level_09_Page_Navigation extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
@@ -68,31 +68,31 @@ public class Level_08_Switch_Page extends BaseTest {
 
     @Test
     public void User_03_Switch_Page() {
-//        // Customer Page -> Address Page
-//        addressPage = customerPage.openAddressPage(driver);
-//
-//        // Address Page -> Order Page
-//        orderPage = addressPage.openOrderPage(driver);
-//
-//        // Order Page -> Customer Page
-//        customerPage = orderPage.openCustomerPage(driver);
-//
-//        // Customer Page -> Order Page
-//        orderPage = customerPage.openOrderPage(driver);
-//
-//        // Order Page -> Address Page
-//        addressPage = orderPage.openAddressPage(driver);
-//
-//        // Address Page -> Reward Point Page
-//        rewardPointPage = addressPage.openRewardPointPage(driver);
-//
-//        // Reward Point Page -> Customer Page
-//        customerPage = rewardPointPage.openCustomerPage(driver);
-//
-//        // Customer Page -> Reward Point Page
-//        rewardPointPage = customerPage.openRewardPointPage(driver);
+        // Customer Page -> Address Page
+        addressPage = customerPage.openAddressPage();
 
-//        // Gọi sai business như 2 page này sẽ ko báo lỗi ngay trong lúc code, báo lỗi lúc chạy
+        // Address Page -> Order Page
+        orderPage = addressPage.openOrderPage();
+
+        // Order Page -> Customer Page
+        customerPage = orderPage.openCustomerPage();
+
+        // Customer Page -> Order Page
+        orderPage = customerPage.openOrderPage();
+
+        // Order Page -> Address Page
+        addressPage = orderPage.openAddressPage();
+
+        // Address Page -> Reward Point Page
+        rewardPointPage = addressPage.openRewardPointPage();
+
+        // Reward Point Page -> Customer Page
+        customerPage = rewardPointPage.openCustomerPage();
+
+        // Customer Page -> Reward Point Page
+        rewardPointPage = customerPage.openRewardPointPage();
+
+        // Gọi sai business như 2 page này sẽ báo lỗi ngay trong lúc code
 //        loginPage.openAddressPage();
 //        registerPage.openCustomerPage();
     }

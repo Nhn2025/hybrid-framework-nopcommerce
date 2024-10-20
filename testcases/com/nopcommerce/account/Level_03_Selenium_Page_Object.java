@@ -6,10 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.CustomerPageObject;
+import pageObjects.user.HomePageObject;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.RegisterPageObject;
 
 import java.time.Duration;
 import java.util.Random;
@@ -18,7 +18,7 @@ public class Level_03_Selenium_Page_Object {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
-    private LoginPageObject loginPage;
+    private UserLoginPageObject loginPage;
     private CustomerPageObject customerPage;
     private String emailAddress = getEmailRandom();
 
@@ -145,7 +145,7 @@ public class Level_03_Selenium_Page_Object {
 
     @Test
     public void User_06_Login_Success() {
-        registerPage.clickToLogOutLink();
+        registerPage.clickToLogoutLink();
 
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
@@ -154,7 +154,7 @@ public class Level_03_Selenium_Page_Object {
         homePage.clickToLoginLink();
 
         // Từ trang Home click vào Login Link nó sẽ mở ra trang Login
-        loginPage = new LoginPageObject(driver);
+        loginPage = new UserLoginPageObject(driver);
 
         // Input Email/ Password
         loginPage.enterToEmailTextbox(emailAddress);

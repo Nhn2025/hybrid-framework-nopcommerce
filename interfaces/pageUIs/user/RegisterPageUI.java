@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIs.user;
 
 public class RegisterPageUI {
     public static final String FIRSTNAME_TEXTBOX = "//input[@id='FirstName']";
@@ -14,5 +14,5 @@ public class RegisterPageUI {
     public static final String CONFIRM_PASSWORD_ERROR_MSG = "//span[@id='ConfirmPassword-error']";
     public static final String REGISTRATION_COMPLETED_MSG = "//div[@class='result']";
     public static final String NOP_COMMERCE_LOGO = "//div[@class='header-logo']//img";
-    public static final String LOG_OUT_BUTTON = "//a[@class='ico-logout']";
+    public static final String LOGOUT_LINK = "//a[@class='ico-logout']";
 }

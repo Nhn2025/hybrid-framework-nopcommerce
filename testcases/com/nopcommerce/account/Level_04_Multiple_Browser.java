@@ -1,29 +1,22 @@
 package com.nopcommerce.account;
 
-import commons.BasePage;
 import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
-
-import java.time.Duration;
-import java.util.Random;
+import pageObjects.user.CustomerPageObject;
+import pageObjects.user.HomePageObject;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.RegisterPageObject;
 
 public class Level_04_Multiple_Browser extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
-    private LoginPageObject loginPage;
+    private UserLoginPageObject loginPage;
     private CustomerPageObject customerPage;
     private String emailAddress = getEmailRandom();
 
@@ -148,7 +141,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
     @Test
     public void User_06_Login_Success() {
-        registerPage.clickToLogOutLink();
+        registerPage.clickToLogoutLink();
 
         // Đang từ Register Page click vào Logo thì nó mở ra trang Home lại
         homePage = new HomePageObject(driver);
@@ -157,7 +150,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
         homePage.clickToLoginLink();
 
         // Từ trang Home click vào Login Link nó sẽ mở ra trang Login
-        loginPage = new LoginPageObject(driver);
+        loginPage = new UserLoginPageObject(driver);
 
         // Input Email/ Password
         loginPage.enterToEmailTextbox(emailAddress);

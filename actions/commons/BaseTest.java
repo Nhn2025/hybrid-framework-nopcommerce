@@ -34,6 +34,28 @@ public class BaseTest {
         return driver;
     }
 
+    protected WebDriver getBrowserDriver(String browserName, String url) {
+
+        BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+
+        if (browser == BrowserList.FIREFOX)
+            driver = new FirefoxDriver();
+        else if (browser == BrowserList.CHROME)
+            driver = new ChromeDriver();
+        else if (browser == BrowserList.EDGE)
+            driver = new EdgeDriver();
+        else
+            throw new RuntimeException("Browser name is not valid.");
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get(url);
+        return driver;
+    }
+
+
     protected String getEmailRandom() {
         Random rand = new Random();
         return "john" + rand.nextInt(99999) + "@kennedy.us";

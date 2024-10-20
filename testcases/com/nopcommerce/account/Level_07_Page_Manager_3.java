@@ -8,16 +8,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.CustomerPageObject;
+import pageObjects.user.HomePageObject;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.RegisterPageObject;
 
 public class Level_07_Page_Manager_3 extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
-    private LoginPageObject loginPage;
+    private UserLoginPageObject loginPage;
     private CustomerPageObject customerPage;
     private String emailAddress = getEmailRandom();
 
@@ -111,7 +111,7 @@ public class Level_07_Page_Manager_3 extends BaseTest {
 
     @Test
     public void User_06_Login_Success() {
-        homePage = registerPage.clickToLogOutLink();
+        homePage = registerPage.clickToLogoutLink();
 
         loginPage = homePage.clickToLoginLink();
 
