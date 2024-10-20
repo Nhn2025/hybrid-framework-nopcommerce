@@ -344,30 +344,6 @@ public class BasePage {
         new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(getWebElement(driver, locator)));
     }
 
-    public SiteMapPageObject openSiteMapPage(WebDriver driver) {
-        waitForElementClickable(driver, PageBaseUI.SITE_MAP_LINK_TEXT);
-        clickToElement(driver, PageBaseUI.SITE_MAP_LINK_TEXT);
-        return PageGeneratorManager.getSiteMapPage(driver);
-    }
-
-    public ShoppingCartPageObject openShoppingCartPage(WebDriver driver) {
-        waitForElementClickable(driver, PageBaseUI.SHOPPING_CART_LINK_TEXT);
-        clickToElement(driver, PageBaseUI.SHOPPING_CART_LINK_TEXT);
-        return PageGeneratorManager.getShoppingCartPage(driver);
-    }
-
-    public SearchPageObject openSearchPage(WebDriver driver) {
-        waitForElementClickable(driver, PageBaseUI.SEARCH_LINK_TEXT);
-        clickToElement(driver, PageBaseUI.SEARCH_LINK_TEXT);
-        return PageGeneratorManager.getSearchPage(driver);
-    }
-
-    public WishlistPageObject openWishlistPage(WebDriver driver) {
-        waitForElementClickable(driver, PageBaseUI.WISHLIST_LINK_TEXT);
-        clickToElement(driver, PageBaseUI.WISHLIST_LINK_TEXT);
-        return PageGeneratorManager.getWishlistPage(driver);
-    }
-
     public boolean isPageLoadedSuccess(WebDriver driver) {
         return new WebDriverWait(driver, Duration.ofSeconds(30)).until(new ExpectedCondition<Boolean>() {
             @Override

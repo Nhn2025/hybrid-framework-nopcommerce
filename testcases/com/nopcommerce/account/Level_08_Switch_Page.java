@@ -99,17 +99,17 @@ public class Level_08_Switch_Page extends BaseTest {
 
     @Test
     public void User_04_Switch_Page_Exercise() {
-        // Reward Point Page -> Site Map Page
-        siteMapPage = rewardPointPage.openSiteMapPage(driver);
-
-        // Site Map Page -> Shopping Cart Page
-        shoppingCartPage = siteMapPage.openShoppingCartPage(driver);
-
-        // Shopping Cart Page -> Search Page
-        searchPage = shoppingCartPage.openSearchPage(driver);
-
-        // Search Page -> Wishlist Page
-        wishlistPage = searchPage.openWishlistPage(driver);
+//        // Reward Point Page -> Site Map Page
+//        siteMapPage = rewardPointPage.openSiteMapPage(driver);
+//
+//        // Site Map Page -> Shopping Cart Page
+//        shoppingCartPage = siteMapPage.openShoppingCartPage(driver);
+//
+//        // Shopping Cart Page -> Search Page
+//        searchPage = shoppingCartPage.openSearchPage(driver);
+//
+//        // Search Page -> Wishlist Page
+//        wishlistPage = searchPage.openWishlistPage(driver);
     }
 
     @AfterClass
