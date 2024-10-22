@@ -7,7 +7,7 @@
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.nopcommerce.account.Level_09_Page_Navigation"/>
+            <class name="com.nopcommerce.account.Level_10_Switch_Role_Url"/>
         </classes>
     </test>
 

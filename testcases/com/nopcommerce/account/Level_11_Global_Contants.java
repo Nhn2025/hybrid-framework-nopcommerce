@@ -1,6 +1,7 @@
 package com.nopcommerce.account;
 
 import commons.BaseTest;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -10,9 +11,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.admin.AdminDashboardPageObject;
 import pageObjects.admin.AdminLoginPageObject;
-import pageObjects.user.*;
+import pageObjects.user.HomePageObject;
+import pageObjects.user.RegisterPageObject;
+import pageObjects.user.UserLoginPageObject;
 
-public class Level_10_Switch_Role extends BaseTest {
+public class Level_11_Global_Contants extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
@@ -21,16 +24,13 @@ public class Level_10_Switch_Role extends BaseTest {
     private AdminDashboardPageObject adminDashboardPage;
     private String emailAddress = getEmailRandom();
 
-    private  String adminUrl, endUserUrl;
+    private  String adminUrl = GlobalConstants.DEV_ADMIN_URL;
+    private  String userUrl = GlobalConstants.DEV_USER_URL;
 
-    @Parameters({"browser", "adminUrl", "userUrl"})
+    @Parameters("browser")
     @BeforeClass
-    public void beforeClass(String browserName, String adminUrl, String userUrl) {
+    public void beforeClass(String browserName) {
         driver = getBrowserDriver(browserName, userUrl);
-
-        this.adminUrl = adminUrl;
-        this.endUserUrl = userUrl;
-
         homePage = PageGeneratorManager.getHomePage(driver);
     }
 
@@ -63,7 +63,7 @@ public class Level_10_Switch_Role extends BaseTest {
 
         adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
-        adminDashboardPage = adminLoginPage.loginToAdmin("nhu@automationfc.vn", "nhu@automationfc.vn");
+        adminDashboardPage = adminLoginPage.loginToAdmin(GlobalConstants.DEV_ADMIN_USERNAME, GlobalConstants.DEV_ADMIN_PASSWORD);
         Assert.assertTrue(adminDashboardPage.isPageLoadedSuccess(driver));
 
         // ...
