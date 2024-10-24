@@ -74,7 +74,7 @@ public class Level_11_Global_Contants extends BaseTest {
         adminLoginPage = adminDashboardPage.clickToLogoutLink();
 
         // Login Page (Admin) -> Home Page (User)
-        adminLoginPage.openPageUrl(driver, this.endUserUrl);
+        adminLoginPage.openPageUrl(driver, this.userUrl);
 
         homePage = PageGeneratorManager.getHomePage(driver);
 

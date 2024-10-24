@@ -3,6 +3,7 @@ package pageObjects.user;
 import commons.BasePage;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
+import pageUIs.user.FooterPageUI;
 import pageUIs.user.MyAccountSideBarPageUI;
 
 public class MyAccountSideBarPageObject extends BasePage {
@@ -36,4 +37,27 @@ public class MyAccountSideBarPageObject extends BasePage {
         return PageGeneratorManager.getCustomerPage(driver);
     }
 
+    public MyAccountSideBarPageObject openDynamicSidebarPage(String pageName) {
+        waitForElementClickable(driver, MyAccountSideBarPageUI.DYNAMIC_SIDEBAR_LINK_TEXT, pageName);
+        clickToElement(driver, MyAccountSideBarPageUI.DYNAMIC_SIDEBAR_LINK_TEXT, pageName);
+
+        switch(pageName) {
+            case "Customer info":
+                return PageGeneratorManager.getCustomerPage(driver);
+            case "Addresses":
+                return PageGeneratorManager.getAddressPage(driver);
+            case "Orders":
+                return PageGeneratorManager.getOrderPage(driver);
+            case "Reward points":
+                return PageGeneratorManager.getRewardPointPage(driver);
+            default:
+                new RuntimeException("Sidebarpage name incorrect.");
+                return null;
+        }
+    }
+
+    public void openDynamicSidebarPageByName(String pageName) {
+        waitForElementClickable(driver, MyAccountSideBarPageUI.DYNAMIC_SIDEBAR_LINK_TEXT, pageName);
+        clickToElement(driver, MyAccountSideBarPageUI.DYNAMIC_SIDEBAR_LINK_TEXT, pageName);
+    }
 }

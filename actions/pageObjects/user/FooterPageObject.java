@@ -36,4 +36,10 @@ public class FooterPageObject extends BasePage {
         clickToElement(driver, FooterPageUI.WISHLIST_LINK_TEXT);
         return PageGeneratorManager.getWishlistPage(driver);
     }
+
+    public void openDynamicFooterPageByName(String pageName) {
+        waitForElementClickable(driver, FooterPageUI.DYNAMIC_LINK_TEXT, pageName);
+        clickToElement(driver, FooterPageUI.DYNAMIC_LINK_TEXT, pageName);
+    }
+
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite parallel="false" name="NopCommerce" >
 
-    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
-    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+<!--    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>-->
+<!--    <parameter name="userUrl" value="http://demo.nopcommerce"/>-->
 
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.nopcommerce.account.Level_10_Switch_Role_Url"/>
+            <class name="com.nopcommerce.account.Level_12_Dynamic_Locator_Rest_Param"/>
         </classes>
     </test>
 

@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.user.*;
 
-public class Level_09_Page_Navigation extends BaseTest {
+public class Level_12_Dynamic_Locator_Rest_Param extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private RegisterPageObject registerPage;
@@ -91,25 +91,66 @@ public class Level_09_Page_Navigation extends BaseTest {
 
         // Customer Page -> Reward Point Page
         rewardPointPage = customerPage.openRewardPointPage();
-
-        // Gọi sai business như 2 page này sẽ báo lỗi ngay trong lúc code
-//        loginPage.openAddressPage();
-//        registerPage.openCustomerPage();
     }
 
     @Test
-    public void User_04_Page_Navigation_Exercise() {
+    public void User_04_Page_Navagation() {
+        // Customer Page -> Address Page
+        addressPage = (AddressPageObject) customerPage.openDynamicSidebarPage("Addresses");
+
+        // Address Page -> Order Page
+        orderPage = (OrderPageObject) addressPage.openDynamicSidebarPage("Orders");
+
+        // Order Page -> Customer Page
+        customerPage = (CustomerPageObject) orderPage.openDynamicSidebarPage("Customer info");
+
+        // Customer Page -> Order Page
+        orderPage = (OrderPageObject) customerPage.openDynamicSidebarPage("Orders");
+
+        // Order Page -> Address Page
+        addressPage = (AddressPageObject) orderPage.openDynamicSidebarPage("Addresses");
+
+        // Address Page -> Reward Point Page
+        rewardPointPage = (RewardPointPageObject) addressPage.openDynamicSidebarPage("Reward points");
+
+        // Reward Point Page -> Customer Page
+        customerPage = (CustomerPageObject) rewardPointPage.openDynamicSidebarPage("Customer info");
+
+        // Customer Page -> Reward Point Page
+        rewardPointPage = (RewardPointPageObject) customerPage.openDynamicSidebarPage("Reward points");
+    }
+
+    @Test
+    public void User_05_Page_Navagation() {
+        // Reward Point Page -> Customer Page
+        rewardPointPage.openDynamicSidebarPage("Customer info");
+        customerPage = PageGeneratorManager.getCustomerPage(driver);
+
+        // Customer Page -> Reward Point Page
+        customerPage.openDynamicSidebarPage("Reward points");
+        rewardPointPage = PageGeneratorManager.getRewardPointPage(driver);
+
+        rewardPointPage.openDynamicSidebarPageByName("Orders");
+        orderPage = PageGeneratorManager.getOrderPage(driver);
+    }
+
+    @Test
+    public void User_06_Page_Navagation_Exercise() {
         // Reward Point Page -> Site Map Page
-        siteMapPage = rewardPointPage.getFooter().openSiteMapPage();
+        rewardPointPage.getFooter().openDynamicFooterPageByName("Sitemap");
+        siteMapPage = PageGeneratorManager.getSiteMapPage(driver);
 
         // Site Map Page -> Shopping Cart Page
-        shoppingCartPage = siteMapPage.openShoppingCartPage();
+        siteMapPage.openDynamicFooterPageByName("Shopping cart");
+        shoppingCartPage = PageGeneratorManager.getShoppingCartPage(driver);
 
         // Shopping Cart Page -> Search Page
-        searchPage = shoppingCartPage.openSearchPage();
+        shoppingCartPage.openDynamicFooterPageByName("Search");
+        searchPage = PageGeneratorManager.getSearchPage(driver);
 
         // Search Page -> Wishlist Page
-        wishlistPage = searchPage.openWishlistPage();
+        searchPage.openDynamicFooterPageByName("Wishlist");
+        wishlistPage = PageGeneratorManager.getWishlistPage(driver);
     }
 
     @AfterClass
