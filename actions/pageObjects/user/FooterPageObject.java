@@ -4,7 +4,6 @@ import commons.BasePage;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
 import pageUIs.user.FooterPageUI;
-import pageUIs.user.PageBaseUI;
 
 public class FooterPageObject extends BasePage {
     WebDriver driver;

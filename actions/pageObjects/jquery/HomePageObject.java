@@ -40,12 +40,12 @@ public class HomePageObject extends BasePage {
         clickToElement(driver, HomePageUI.ROW_ACTION_BY_COUNTRY_NAME, country, rowAction);
     }
 
-    public List<String> getALlPageValuesByColumnName(String columnName) {
+    public List<String> getAllPageValuesByColumnName(String columnName) {
         List<String> allValues = new ArrayList<String>();
 
         List<WebElement> allPageLinks = getListWebElement(driver, HomePageUI.ALL_PAGE_LINKS);
 
-        int columnIndex = getListELementsSize(driver, HomePageUI.COLUMN_INDEX_BY_COLUMN_NAME) + 1;
+        int columnIndex = getListELementsSize(driver, HomePageUI.COLUMN_INDEX_BY_COLUMN_NAME, columnName) + 1;
         // 3
 
         for (WebElement pageLink : allPageLinks) {

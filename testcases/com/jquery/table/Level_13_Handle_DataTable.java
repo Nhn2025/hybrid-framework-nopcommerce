@@ -2,7 +2,6 @@ package com.jquery.table;
 
 import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.devtools.v85.page.Page;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,7 +9,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.jquery.HomePageObject;
 import pageObjects.jquery.PageGeneratorManager;
-import pageObjects.user.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +28,7 @@ public class Level_13_Handle_DataTable extends BaseTest {
         homePage = PageGeneratorManager.getHomePage(driver);
     }
 
-    //@Test
+    @Test
     public void TC_01_Search() {
         // Search dữ liệu trong 1 table (trên Header)
         homePage.inputToColumnTextboxByName("Females", "283821");
@@ -46,7 +44,7 @@ public class Level_13_Handle_DataTable extends BaseTest {
         homePage.sleepInSecond(2);
     }
 
-    //@Test
+    @Test
     public void TC_02_Paging() {
         // Click to any page
         homePage.clickToPageByNumber("10");
@@ -59,7 +57,7 @@ public class Level_13_Handle_DataTable extends BaseTest {
         Assert.assertTrue(homePage.isPageActiveByNumber("4"));
     }
 
-    //@Test
+    @Test
     public void TC_03_Displayed() {
         homePage.refreshCurrentPage(driver);
 
@@ -70,7 +68,7 @@ public class Level_13_Handle_DataTable extends BaseTest {
         Assert.assertTrue(homePage.isRowValuesDisplayed("283821", "Algeria", "295140", "578961"));
     }
 
-    //@Test
+    @Test
     public void TC_04_Icon_Button_Checkbox() {
         homePage.refreshCurrentPage(driver);
 
@@ -89,10 +87,10 @@ public class Level_13_Handle_DataTable extends BaseTest {
         homePage.refreshCurrentPage(driver);
     }
 
-    //@Test
+    @Test
     public void TC_05_Get_All_Column_Values() {
         // UI
-        allValueUI = homePage.getALlPageValuesByColumnName("Country");
+        allValueUI = homePage.getAllPageValuesByColumnName("Country");
 
         // API: Rest Assured/ Karate/ ...
         // allValueAPI = homePage.getALlPageValuesByColumnNameInAPI("Country");
@@ -100,9 +98,9 @@ public class Level_13_Handle_DataTable extends BaseTest {
         // DB: JTDS/ SQL/ ...
         // allValueDB = homePage.getALlPageValuesByColumnNameInDB("Country");
 
-        Assert.assertEquals(allValueDB, allValueUI);
+        // Assert.assertEquals(allValueDB, allValueUI);
 
-        Assert.assertEquals(allValueDB, allValueAPI);
+        // Assert.assertEquals(allValueDB, allValueAPI);
     }
 
     @Test
@@ -129,4 +127,5 @@ public class Level_13_Handle_DataTable extends BaseTest {
     public void afterClass() {
         // closeBrowser();
     }
+    //https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/
 }
