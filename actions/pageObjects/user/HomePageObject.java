@@ -34,4 +34,9 @@ public class HomePageObject extends BasePage {
         waitForElementClickable(driver, HomePageUI.LOG_OUT_LINK);
         clickToElement(driver, HomePageUI.LOG_OUT_LINK);
     }
+
+    public boolean isRegisterLinkDisplayed() {
+        waitForElementVisible(driver, HomePageUI.REGISTER_LINK);
+        return isELementDisplayed(driver, HomePageUI.REGISTER_LINK);
+    }
 }

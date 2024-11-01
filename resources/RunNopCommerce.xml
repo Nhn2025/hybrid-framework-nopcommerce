@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite parallel="false" name="NopCommerce" >
 
-<!--    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>-->
-<!--    <parameter name="userUrl" value="http://demo.nopcommerce"/>-->
+    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
+    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+    </listeners>
 
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.nopcommerce.account.Level_12_Dynamic_Locator_Rest_Param"/>
+            <class name="com.nopcommerce.account.Level_15_Assert_Verify"/>
         </classes>
     </test>
 
 <!--    <test name="Run on Chrome">-->
 <!--        <parameter name="browser" value="chrome"/>-->
 <!--        <classes>-->
-<!--            <class name="com.nopcommerce.account.Level_06_Selenium_Page_Factory"/>-->
+<!--            <class name="com.nopcommerce.account.Level_15_Assert_Verify"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 
