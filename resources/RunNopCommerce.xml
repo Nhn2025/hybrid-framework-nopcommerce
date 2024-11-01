@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite parallel="false" name="NopCommerce" >
-
-    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
-    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="none" name="NopCommerce" >
 
     <listeners>
         <listener class-name="commons.MethodListener"/>
@@ -10,23 +8,11 @@
 
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox"/>
+        <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
+        <parameter name="userUrl" value="http://demo.nopcommerce"/>
         <classes>
-            <class name="com.nopcommerce.account.Level_15_Assert_Verify"/>
+            <class name="com.nopcommerce.account.Level_16_Log"/>
         </classes>
     </test>
-
-<!--    <test name="Run on Chrome">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <classes>-->
-<!--            <class name="com.nopcommerce.account.Level_15_Assert_Verify"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Run on Edge">-->
-<!--        <parameter name="browser" value="edge"/>-->
-<!--        <classes>-->
-<!--            <class name="com.nopcommerce.account.Level_06_Selenium_Page_Factory"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 
 </suite>

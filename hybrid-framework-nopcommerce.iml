@@ -7,9 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/interfaces" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testcases" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaTester" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="libLog4Jver2" level="project" />
     <orderEntry type="library" name="libSelenium" level="project" />
+    <orderEntry type="library" name="sourceDocs" level="project" />
   </component>
 </module>

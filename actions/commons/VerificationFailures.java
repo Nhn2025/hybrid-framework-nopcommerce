@@ -7,7 +7,6 @@ import java.util.List;
 import org.testng.ITestResult;
 
 public class VerificationFailures extends HashMap<ITestResult, List<Throwable>> {
-
     private VerificationFailures() {
         super();
     }
