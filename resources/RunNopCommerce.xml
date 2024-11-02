@@ -4,12 +4,23 @@
 
     <listeners>
         <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.ReportNGListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
 
-    <test name="Run on Firefox">
-        <parameter name="browser" value="firefox"/>
-        <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
-        <parameter name="userUrl" value="http://demo.nopcommerce"/>
+    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
+    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+
+<!--    <test name="Run on Firefox">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="com.nopcommerce.account.Level_16_Log"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.nopcommerce.account.Level_16_Log"/>
         </classes>

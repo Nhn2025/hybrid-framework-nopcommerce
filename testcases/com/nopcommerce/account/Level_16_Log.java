@@ -33,7 +33,7 @@ public class Level_16_Log extends BaseTest {
     @Test
     public void User_01_Register_Success() {
         log.info("Register - Step 01: Verify Register link is displayed");
-        verifyFalse(homePage.isRegisterLinkDisplayed());
+        verifyTrue(homePage.isRegisterLinkDisplayed());
 
         log.info("Register - Step 02: Click to Register link");
         registerPage = homePage.clickToRegisterLink();

@@ -24,12 +24,12 @@ public class TestNGAppender extends AbstractAppender {
     }
 
     public void info(String logMessage) {
-        Reporter.log(logMessage + "<br>");
+        Reporter.log("<br>" + logMessage + "<br>");
     }
 
     @Override
     public void append(LogEvent event) {
-        Reporter.log(event.getMessage().getFormattedMessage() + "<br>");
+        Reporter.log(event.getMessage().getFormattedMessage());
     }
 
     @PluginFactory

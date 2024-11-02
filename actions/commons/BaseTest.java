@@ -10,19 +10,24 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.Random;
 
 public class BaseTest {
 
+    protected WebDriver driver;
     protected final Logger log;
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 
     public BaseTest() {
         log = LogManager.getLogger(getClass());
     }
-
-    private WebDriver driver;
 
     protected WebDriver getBrowserDriver(String browserName) {
 
@@ -119,4 +124,27 @@ public class BaseTest {
         }
         return pass;
     }
+
+    @BeforeSuite
+    public void deleteReportFolder() {
+        deleteAllFileInFolder("htmlReportNG");
+    }
+
+    private void deleteAllFileInFolder(String folderName) {
+        try {
+            String pathFolderDownload = GlobalConstants.PROJECT_PATH + File.separator + folderName;
+            File file = new File(pathFolderDownload);
+            File[] listOfFiles = file.listFiles();
+            if (listOfFiles.length != 0) {
+                for (int i = 0; i < listOfFiles.length; i++) {
+                    if (listOfFiles[i].isFile() && !listOfFiles[i].getName().equals("environment.properties")) {
+                        new File(listOfFiles[i].toString()).delete();
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.print(e.getMessage());
+        }
+    }
+
 }
