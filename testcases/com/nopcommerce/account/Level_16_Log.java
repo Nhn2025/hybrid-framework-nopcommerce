@@ -3,6 +3,7 @@ package com.nopcommerce.account;
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -33,7 +34,7 @@ public class Level_16_Log extends BaseTest {
     @Test
     public void User_01_Register_Success() {
         log.info("Register - Step 01: Verify Register link is displayed");
-        verifyTrue(homePage.isRegisterLinkDisplayed());
+        Assert.assertTrue(homePage.isRegisterLinkDisplayed());
 
         log.info("Register - Step 02: Click to Register link");
         registerPage = homePage.clickToRegisterLink();
@@ -42,10 +43,10 @@ public class Level_16_Log extends BaseTest {
         registerPage.clickToRegisterButton();
 
         log.info("Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'");
-        verifyEquals(registerPage.getFirstNameErrorMessageText(), "First name is required.");
+        Assert.assertEquals(registerPage.getFirstNameErrorMessageText(), "First name is required.");
 
         log.info("Register - Step 05: Verify error message at LastName textbox is 'Last name is required'");
-        verifyEquals(registerPage.getLastNameErrorMessageText(), "Last name is required");
+        Assert.assertEquals(registerPage.getLastNameErrorMessageText(), "Last name is required");
 
         log.info("Register - Step 06: Enter to First Name textbox with value is " + firstName);
         registerPage.enterToFirstNameTextbox(firstName);
@@ -66,7 +67,7 @@ public class Level_16_Log extends BaseTest {
         registerPage.clickToRegisterButton();
 
         log.info("Register - Step 12: Verify success message is displayed");
-        verifyEquals(registerPage.getRegisterSuccessMessageText(), "Your registration completed.");
+        Assert.assertEquals(registerPage.getRegisterSuccessMessageText(), "Your registration completed.");
     }
 
     @AfterClass

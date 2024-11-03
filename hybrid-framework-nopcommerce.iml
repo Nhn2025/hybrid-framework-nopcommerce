@@ -15,5 +15,6 @@
     <orderEntry type="library" name="libSelenium" level="project" />
     <orderEntry type="library" name="sourceDocs" level="project" />
     <orderEntry type="library" name="libReportNG" level="project" />
+    <orderEntry type="library" name="libExtent5" level="project" />
   </component>
 </module>

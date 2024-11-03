@@ -4,20 +4,23 @@ import java.io.File;
 
 public class GlobalConstants {
 
+    // App Infor User
     public static final String DEV_USER_URL = "http://demo.nopcommerce";
+
+    //  App Infor Admin
     public static final String DEV_ADMIN_URL = "http://demo.nopcommerce/login?ReturnUrl=%2Fadmin";
+    public static final String DEV_ADMIN_USERNAME = "nhu@automationfc.vn";
+    public static final String DEV_ADMIN_PASSWORD = "nhu@automationfc.vn";
 
     // Wait Infor
     public static final long SHORT_TIMEOUT = 5;
     public static final long LONG_TIMEOUT = 30;
 
-    public static final String DEV_ADMIN_USERNAME = "nhu@automationfc.vn";
-    public static final String DEV_ADMIN_PASSWORD = "nhu@automationfc.vn";
-
+    // System Infor
     public static final String OS_NAME = System.getProperty("os.name");
     public static final String PROJECT_PATH = System.getProperty("user.dir");
-
     public static final String SEPARATOR = File.separator;
+    public static final String JAVA_VERSION = System.getProperty("java.version");
 
     // Download/ Upload file
     public static final String UPLOAD_PATH = PROJECT_PATH + SEPARATOR + "uploadFiles" + SEPARATOR;
