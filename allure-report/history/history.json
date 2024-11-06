@@ -1,1 +1,0 @@
-{"e69a7e526c16c5da742f50b5608b0d07":{"statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"c591291b4706e7ad","status":"failed","statusDetails":"expected [Last name is required] but found [Last name is required.]","time":{"start":1730784659854,"stop":1730784662560,"duration":2706}}]}}
