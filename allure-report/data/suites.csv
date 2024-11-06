@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Nov 05 12:30:59 ICT 2024","Tue Nov 05 12:31:02 ICT 2024","2706","NopCommerce","Run on Firefox","com.nopcommerce.account.Level_18_AllureReport","com.nopcommerce.account.Level_18_AllureReport","User_01_Register_Success","User_01_Register_Success",""

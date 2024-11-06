@@ -1,0 +1,18 @@
+[02-11-2024 16:05:44.338 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 16:05:44.498 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:44.499 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 16:05:44.872 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 16:05:45.239 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 16:05:45.268 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:45.268 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 16:05:45.296 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:45.296 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:05:45.298 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 16:05:45.350 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 16:05:45.406 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john60983@kennedy.us
+[02-11-2024 16:05:45.482 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 16:05:45.533 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 16:05:45.582 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 16:05:46.538 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 16:05:46.584 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:46.584 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------

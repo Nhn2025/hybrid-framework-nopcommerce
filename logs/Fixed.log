@@ -1,0 +1,431 @@
+[02-11-2024 01:41:53.265 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 01:41:53.340 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:41:53.342 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 01:41:53.343 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 01:41:53.631 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 01:41:53.933 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 01:41:53.962 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:41:53.962 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 01:41:53.988 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:41:53.988 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 01:41:53.989 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 01:41:54.032 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 01:41:54.079 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john82240@kennedy.us
+[02-11-2024 01:41:54.143 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 01:41:54.188 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 01:41:54.230 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 01:41:54.550 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 01:41:54.581 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:41:54.581 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 01:45:25.325 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 01:45:25.528 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:45:25.531 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 01:45:25.533 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 01:45:26.587 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 01:45:26.904 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 01:45:26.929 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:45:26.929 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 01:45:26.956 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:45:26.957 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 01:45:26.957 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 01:45:27.023 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 01:45:27.089 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john76402@kennedy.us
+[02-11-2024 01:45:27.177 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 01:45:27.225 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 01:45:27.275 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 01:45:27.637 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 01:45:27.673 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 01:45:27.673 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:53:51.033 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 13:53:51.146 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:53:51.148 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:53:51.149 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 13:53:56.166 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 13:53:56.538 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 13:53:56.582 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:53:56.583 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 13:53:56.624 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:53:56.625 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:53:56.625 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 13:53:56.722 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 13:53:56.825 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john95699@kennedy.us
+[02-11-2024 13:53:56.946 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 13:53:57.017 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 13:53:57.083 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 13:54:01.841 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 13:54:01.896 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:54:01.896 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:56:07.650 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 13:56:07.769 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:07.773 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:56:07.773 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 13:56:08.209 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 13:56:08.512 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 13:56:08.561 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:08.563 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 13:56:08.610 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:08.610 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:56:08.610 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 13:56:08.674 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 13:56:08.747 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john58762@kennedy.us
+[02-11-2024 13:56:08.842 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 13:56:08.905 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 13:56:08.973 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 13:56:09.727 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 13:56:09.769 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:09.769 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:56:35.963 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 13:56:36.062 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:36.064 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:56:36.066 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 13:56:36.469 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 13:56:36.851 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 13:56:36.905 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:36.906 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 13:56:36.954 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:36.955 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:56:36.956 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 13:56:37.057 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 13:56:37.181 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john30973@kennedy.us
+[02-11-2024 13:56:37.294 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 13:56:37.372 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 13:56:37.472 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 13:56:38.113 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 13:56:38.176 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:56:38.177 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 13:59:22.739 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 13:59:22.863 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:59:22.867 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 13:59:23.282 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 13:59:23.630 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 13:59:23.695 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:59:23.696 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 13:59:23.749 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:59:23.750 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 13:59:23.860 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 13:59:23.963 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john46732@kennedy.us
+[02-11-2024 13:59:24.094 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 13:59:24.189 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 13:59:24.296 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 13:59:24.996 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 13:59:25.060 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 13:59:25.063 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 14:00:07.620 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:00:07.722 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:00:07.727 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:00:08.119 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:00:08.474 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:00:08.542 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:00:08.544 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:00:08.607 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:00:08.609 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:00:08.729 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:00:08.848 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john92381@kennedy.us
+[02-11-2024 14:00:09.002 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:00:09.103 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:00:09.268 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:00:09.832 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:00:09.888 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:09.173 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:01:09.260 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:09.262 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:01:09.625 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:01:09.980 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:01:10.021 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:10.021 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:01:10.052 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:10.053 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:01:10.116 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:01:10.232 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john64114@kennedy.us
+[02-11-2024 14:01:10.341 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:01:10.419 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:01:10.535 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:01:11.130 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:01:11.189 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:16.494 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:01:16.575 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:16.576 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:01:16.929 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:01:17.105 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:01:17.202 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:17.203 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:01:17.289 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:17.290 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:01:17.548 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:01:17.882 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john76515@kennedy.us
+[02-11-2024 14:01:18.274 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:01:18.557 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:01:18.730 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:01:19.122 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:01:19.289 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:23.693 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:01:23.785 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:23.785 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:01:24.306 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:01:24.411 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:01:24.460 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:24.460 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:01:24.495 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:01:24.495 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:01:24.709 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:01:24.902 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john40325@kennedy.us
+[02-11-2024 14:01:25.213 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:01:25.388 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:01:25.548 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:01:26.046 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:01:26.159 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:10.007 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:10:10.116 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:10.122 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:10:10.538 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:10:10.908 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:10:10.984 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:10.986 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:10:11.056 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:11.058 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:10:11.170 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:10:11.283 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john30198@kennedy.us
+[02-11-2024 14:10:11.445 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:10:11.549 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:10:11.664 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:10:12.376 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:10:12.436 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:15.891 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:10:15.995 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:15.996 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:10:16.386 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:10:16.588 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:10:16.681 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:16.682 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:10:16.746 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:16.747 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:10:16.974 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:10:17.235 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john56227@kennedy.us
+[02-11-2024 14:10:17.490 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:10:17.694 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:10:17.931 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:10:18.300 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:10:18.454 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:20.835 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:10:20.892 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:20.892 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:10:21.132 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:10:21.234 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:10:21.283 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:21.283 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:10:21.314 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:10:21.314 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:10:21.490 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:10:21.797 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john86809@kennedy.us
+[02-11-2024 14:10:22.078 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:10:22.284 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:10:22.526 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:10:22.936 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:10:23.073 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:31.749 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:11:31.858 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:31.860 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:11:32.286 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:11:32.614 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:11:32.697 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:32.699 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:11:32.741 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:32.742 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:11:32.820 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:11:32.888 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john74981@kennedy.us
+[02-11-2024 14:11:32.972 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:11:33.024 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:11:33.107 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:11:33.791 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:11:33.857 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:37.639 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:11:37.743 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:37.745 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:11:38.124 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:11:38.332 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:11:38.402 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:38.405 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:11:38.466 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:38.467 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:11:38.626 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:11:38.856 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john62861@kennedy.us
+[02-11-2024 14:11:39.110 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:11:39.363 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:11:39.631 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:11:40.255 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:11:40.415 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:42.808 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:11:42.869 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:42.869 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:11:43.314 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:11:43.442 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:11:43.513 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:43.513 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:11:43.553 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:11:43.553 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:11:43.709 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:11:43.865 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john865@kennedy.us
+[02-11-2024 14:11:44.042 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:11:44.193 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:11:44.345 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:11:44.887 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:11:44.973 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:13:25.878 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 14:13:25.978 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:13:25.979 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 14:13:26.293 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 14:13:26.619 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 14:13:26.686 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:13:26.687 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 14:13:26.736 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:13:26.737 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 14:13:26.825 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 14:13:26.890 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john18771@kennedy.us
+[02-11-2024 14:13:26.994 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 14:13:27.055 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 14:13:27.118 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 14:13:27.713 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 14:13:27.755 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 14:13:27.756 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:43:13.189 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 15:43:13.308 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:13.311 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 15:43:16.325 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 15:43:16.799 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 15:43:16.858 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:16.859 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 15:43:16.917 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:16.917 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 15:43:17.040 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 15:43:17.139 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john68881@kennedy.us
+[02-11-2024 15:43:17.297 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 15:43:17.380 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 15:43:17.529 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 15:43:20.698 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 15:43:20.767 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:20.768 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:46:45.932 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 15:46:46.066 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:46:46.068 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 15:46:46.654 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 15:46:47.087 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 15:46:47.133 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:46:47.134 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 15:46:47.174 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:46:47.174 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 15:46:47.246 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 15:46:47.349 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john21007@kennedy.us
+[02-11-2024 15:46:47.455 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 15:46:47.520 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 15:46:47.643 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 15:46:48.992 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 15:46:49.064 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:46:49.067 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:48:18.715 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 15:48:18.780 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:48:18.783 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 15:48:19.100 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 15:48:19.430 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 15:48:19.463 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:48:19.463 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 15:48:19.493 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:48:19.495 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:48:19.495 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 15:48:19.544 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 15:48:19.604 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john95822@kennedy.us
+[02-11-2024 15:48:19.701 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 15:48:19.759 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 15:48:19.812 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 15:48:20.181 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 15:48:20.222 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:48:20.222 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:49:46.631 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 15:49:46.702 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:49:46.703 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 15:49:46.955 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 15:49:47.256 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 15:49:47.285 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:49:47.285 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 15:49:47.317 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:49:47.318 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:49:47.318 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 15:49:47.374 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 15:49:47.445 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john74377@kennedy.us
+[02-11-2024 15:49:47.532 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 15:49:47.589 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 15:49:47.640 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 15:49:48.019 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 15:49:48.062 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:49:48.063 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:56:34.530 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 15:56:34.618 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:56:34.620 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 15:56:34.903 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 15:56:35.224 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 15:56:35.272 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:56:35.273 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 15:56:35.311 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:56:35.312 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 15:56:35.312 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 15:56:35.368 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 15:56:35.431 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john59539@kennedy.us
+[02-11-2024 15:56:35.513 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 15:56:35.560 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 15:56:35.605 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 15:56:36.015 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 15:56:36.046 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:56:36.046 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:05:44.338 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 16:05:44.498 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:44.499 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 16:05:44.872 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 16:05:45.239 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 16:05:45.268 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:45.268 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 16:05:45.296 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:45.296 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:05:45.298 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 16:05:45.350 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 16:05:45.406 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john60983@kennedy.us
+[02-11-2024 16:05:45.482 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 16:05:45.533 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 16:05:45.582 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 16:05:46.538 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 16:05:46.584 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:05:46.584 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:07:19.999 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 16:07:20.076 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:07:20.077 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 16:07:20.280 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 16:07:20.383 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 16:07:20.437 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:07:20.437 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 16:07:20.482 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:07:20.483 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:07:20.484 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 16:07:20.605 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 16:07:20.730 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john76264@kennedy.us
+[02-11-2024 16:07:20.855 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 16:07:20.962 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 16:07:21.093 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 16:07:21.479 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 16:07:21.580 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:07:21.580 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:13:17.059 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 16:13:17.139 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:13:17.146 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 16:13:17.365 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 16:13:17.494 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 16:13:17.536 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:13:17.536 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 16:13:17.567 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:13:17.568 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------
+[02-11-2024 16:13:17.568 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 16:13:17.698 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 16:13:17.826 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john39352@kennedy.us
+[02-11-2024 16:13:17.977 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 16:13:18.095 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 16:13:18.198 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 16:13:19.195 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 16:13:19.234 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 16:13:19.235 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------

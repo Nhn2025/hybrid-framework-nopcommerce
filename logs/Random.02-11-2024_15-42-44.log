@@ -1,0 +1,17 @@
+[02-11-2024 15:43:13.189 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 01: Verify Register link is displayed
+[02-11-2024 15:43:13.308 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:13.311 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 02: Click to Register link
+[02-11-2024 15:43:16.325 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 03: Click to Register button
+[02-11-2024 15:43:16.799 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'
+[02-11-2024 15:43:16.858 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:16.859 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 05: Verify error message at LastName textbox is 'Last name is required'
+[02-11-2024 15:43:16.917 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:16.917 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 06: Enter to First Name textbox with value is John
+[02-11-2024 15:43:17.040 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 07: Enter to Last Name textbox with value is Kennedy
+[02-11-2024 15:43:17.139 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 08: Enter to Email Address textbox with value is john68881@kennedy.us
+[02-11-2024 15:43:17.297 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 09: Enter to Password textbox with value is 123456
+[02-11-2024 15:43:17.380 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 10: Enter to Confirm Password textbox with value is 123456
+[02-11-2024 15:43:17.529 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 11: Click to Register button
+[02-11-2024 15:43:20.698 INFO com.nopcommerce.account.Level_16_Log] - Register - Step 12: Verify success message is displayed
+[02-11-2024 15:43:20.767 INFO com.nopcommerce.account.Level_16_Log] - ------------------------PASSED--------------------
+[02-11-2024 15:43:20.768 INFO com.nopcommerce.account.Level_16_Log] - ------------------------FAILED--------------------

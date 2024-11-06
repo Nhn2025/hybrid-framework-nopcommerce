@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-NopCommerce" class="navigator-link">
+              <span class="suite-name border-failed">NopCommerce</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-NopCommerce" class="navigator-link ">
+                    <span>E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-NopCommerce" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-NopCommerce" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-NopCommerce" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-NopCommerce" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-NopCommerce" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-NopCommerce" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NopCommerce" class="hide-methods failed suite-NopCommerce"> (hide)</a> <!-- hide-methods failed suite-NopCommerce -->
+                      <a href="#" panel-name="suite-NopCommerce" class="show-methods failed suite-NopCommerce"> (show)</a> <!-- show-methods failed suite-NopCommerce -->
+                    </span>
+                    <div class="method-list-content failed suite-NopCommerce">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.account.Level_16_Log" class="method navigator-link" hash-for-method="User_01_Register_Success">User_01_Register_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-NopCommerce -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-NopCommerce" class="hide-methods skipped suite-NopCommerce"> (hide)</a> <!-- hide-methods skipped suite-NopCommerce -->
+                      <a href="#" panel-name="suite-NopCommerce" class="show-methods skipped suite-NopCommerce"> (show)</a> <!-- show-methods skipped suite-NopCommerce -->
+                    </span>
+                    <div class="method-list-content skipped suite-NopCommerce">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.account.Level_16_Log" class="method navigator-link" hash-for-method="User_01_Register_Success">User_01_Register_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.account.Level_16_Log" class="method navigator-link" hash-for-method="User_01_Register_Success">User_01_Register_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-NopCommerce -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-NopCommerce" class="panel NopCommerce">
+          <div class="suite-NopCommerce-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nopcommerce.account.Level_16_Log</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_01_Register_Success">
+                  </a> <!-- User_01_Register_Success -->
+                  <span class="method-name">User_01_Register_Success</span>
+                  <div class="stack-trace">java.lang.Throwable: Multiple failures (3):
+Failure 1 of 3
+java.lang.AssertionError: expected [false] but found [true]
+	at commons.BaseTest.verifyFalse(BaseTest.java:99)
+	at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:36)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Failure 2 of 3
+java.lang.AssertionError: expected [Last name is required] but found [Last name is required.]
+	at commons.BaseTest.verifyEquals(BaseTest.java:113)
+	at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:48)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Failure 3 of 3
+java.lang.AssertionError: expected [Your registration completed.] but found [Your registration completed]
+	at commons.BaseTest.verifyEquals(BaseTest.java:113)
+	at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:69)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 80 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NopCommerce-class-failed -->
+          <div class="suite-NopCommerce-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.nopcommerce.account.Level_16_Log</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_01_Register_Success">
+                  </a> <!-- User_01_Register_Success -->
+                  <span class="method-name">User_01_Register_Success</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;userUrl&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_01_Register_Success">
+                  </a> <!-- User_01_Register_Success -->
+                  <span class="method-name">User_01_Register_Success</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;userUrl&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NopCommerce-class-skipped -->
+        </div> <!-- panel NopCommerce -->
+        <div panel-name="test-xml-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;NopCommerce&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;adminUrl&quot; value=&quot;http://demo.nopcommerce/login?ReturnUrl=%2Fadmin&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;commons.MethodListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Firefox&quot;&gt;
+    &lt;parameter name=&quot;userUrl&quot; value=&quot;http://demo.nopcommerce&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nopcommerce.account.Level_16_Log&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on Firefox --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nopcommerce.account.Level_16_Log&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Edge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nopcommerce.account.Level_16_Log&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on Edge --&gt;
+&lt;/suite&gt; &lt;!-- NopCommerce --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for NopCommerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run on Firefox (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Run on Chrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Run on Edge (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for NopCommerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for NopCommerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_NopCommerce');
+function tableData_NopCommerce() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'User_01_Register_Success')
+data.setCell(0, 2, 'com.nopcommerce.account.Level_16_Log')
+data.setCell(0, 3, 10871);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'User_01_Register_Success')
+data.setCell(1, 2, 'com.nopcommerce.account.Level_16_Log')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'User_01_Register_Success')
+data.setCell(2, 2, 'com.nopcommerce.account.Level_16_Log')
+data.setCell(2, 3, 0);
+window.suiteTableData['NopCommerce']= { tableData: data, tableDiv: 'times-div-NopCommerce'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-NopCommerce">
+              </div> <!-- times-div-NopCommerce -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for NopCommerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_01_Register_Success</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Register - Step 01: Verify Register link is displayed<br></span>
+                <span class="reporter-method-output">------------------------PASSED--------------------<br></span>
+                <span class="reporter-method-output">------------------------FAILED--------------------<br></span>
+                <span class="reporter-method-output">Register - Step 02: Click to Register link<br></span>
+                <span class="reporter-method-output">Register - Step 03: Click to Register button<br></span>
+                <span class="reporter-method-output">Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'<br></span>
+                <span class="reporter-method-output">------------------------PASSED--------------------<br></span>
+                <span class="reporter-method-output">Register - Step 05: Verify error message at LastName textbox is 'Last name is required'<br></span>
+                <span class="reporter-method-output">------------------------PASSED--------------------<br></span>
+                <span class="reporter-method-output">------------------------FAILED--------------------<br></span>
+                <span class="reporter-method-output">Register - Step 06: Enter to First Name textbox with value is John<br></span>
+                <span class="reporter-method-output">Register - Step 07: Enter to Last Name textbox with value is Kennedy<br></span>
+                <span class="reporter-method-output">Register - Step 08: Enter to Email Address textbox with value is john95699@kennedy.us<br></span>
+                <span class="reporter-method-output">Register - Step 09: Enter to Password textbox with value is 123456<br></span>
+                <span class="reporter-method-output">Register - Step 10: Enter to Confirm Password textbox with value is 123456<br></span>
+                <span class="reporter-method-output">Register - Step 11: Click to Register button<br></span>
+                <span class="reporter-method-output">Register - Step 12: Verify success message is displayed<br></span>
+                <span class="reporter-method-output">------------------------PASSED--------------------<br></span>
+                <span class="reporter-method-output">------------------------FAILED--------------------<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-NopCommerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nopcommerce.account.Level_16_Log</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(firefox, http://demo.nopcommerce/login?ReturnUrl=%2Fadmin, http://demo.nopcommerce)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_01_Register_Success</span>
+                <span class="method-start">99314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">110200 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">User_01_Register_Success</span>
+                <span class="method-start">-1730530331712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">User_01_Register_Success</span>
+                <span class="method-start">-1730530331712 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

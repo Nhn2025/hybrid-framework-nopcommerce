@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run on Firefox</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run on Firefox</h1>
+<p>
+  Test duration: 5.704s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.nopcommerce.account.Level_18_AllureReport</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  beforeClass
+      </td>
+  <td class="duration">
+    5.687s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"firefox", "http://demo.nopcommerce/login?ReturnUrl=%2Fadmin", "http://demo.nopcommerce"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette <br/>
+Host info: host: &apos;NHUDUONG&apos;, ip: &apos;192.168.8.103&apos;<br/>
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 3}}}]}]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)<br />
+              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)<br />
+              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)<br />
+              commons.BaseTest.getBrowserDriver(BaseTest.java:58)<br />
+              com.nopcommerce.account.Level_18_AllureReport.beforeClass(Level_18_AllureReport.java:35)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.nopcommerce.account.Level_18_AllureReport</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  afterClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
+
+
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.account.Level_18_AllureReport</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  User_01_Register_Success
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  
+</body>
+</html>

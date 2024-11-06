@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on Firefox(failed)">
+    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+    <classes>
+      <class name="com.nopcommerce.account.Level_16_Log">
+        <methods>
+          <include name="User_01_Register_Success"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.account.Level_16_Log -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopcommerce.account.Level_16_Log">
+        <methods>
+          <include name="User_01_Register_Success"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.account.Level_16_Log -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+  <test thread-count="5" name="Run on Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.nopcommerce.account.Level_16_Log">
+        <methods>
+          <include name="User_01_Register_Success"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.account.Level_16_Log -->
+    </classes>
+  </test> <!-- Run on Edge(failed) -->
+</suite> <!-- Failed suite [NopCommerce] -->

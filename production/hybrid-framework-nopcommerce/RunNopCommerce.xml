@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="none" name="NopCommerce" >
+
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.AllureListener"/>
+    </listeners>
+
+    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
+    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+
+    <test name="Run on Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.nopcommerce.account.Level_18_AllureReport"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Register - Step 01: Verify Register link is displayed<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------PASSED--------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------FAILED--------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 02: Click to Register link<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 03: Click to Register button<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------PASSED--------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 05: Verify error message at LastName textbox is 'Last name is required'<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------PASSED--------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------FAILED--------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 06: Enter to First Name textbox with value is John<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 07: Enter to Last Name textbox with value is Kennedy<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 08: Enter to Email Address textbox with value is john95699@kennedy.us<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 09: Enter to Password textbox with value is 123456<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 10: Enter to Confirm Password textbox with value is 123456<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 11: Click to Register button<br>]]>
+    </line>
+    <line>
+      <![CDATA[Register - Step 12: Verify success message is displayed<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------PASSED--------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[------------------------FAILED--------------------<br>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-11-02T06:52:11Z" name="NopCommerce" finished-at="2024-11-02T06:54:04Z" duration-ms="112544">
+    <groups>
+    </groups>
+    <test started-at="2024-11-02T06:52:11Z" name="Run on Firefox" finished-at="2024-11-02T06:54:04Z" duration-ms="112509">
+      <class name="com.nopcommerce.account.Level_16_Log">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.account.Level_16_Log@338c99c8]" started-at="2024-11-02T06:52:11Z" name="beforeClass" finished-at="2024-11-02T06:53:51Z" duration-ms="99304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.nopcommerce/login?ReturnUrl=%2Fadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://demo.nopcommerce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="User_01_Register_Success()[pri:0, instance:com.nopcommerce.account.Level_16_Log@338c99c8]" started-at="2024-11-02T06:53:51Z" name="User_01_Register_Success" finished-at="2024-11-02T06:54:01Z" duration-ms="10871" status="FAIL">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Multiple failures (3):
+Failure 1 of 3
+java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertFalse(Assert.java:65)
+at org.testng.Assert.assertFalse(Assert.java:75)
+at commons.BaseTest.verifyFalse(BaseTest.java:99)
+at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Failure 2 of 3
+java.lang.AssertionError: expected [Last name is required] but found [Last name is required.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at commons.BaseTest.verifyEquals(BaseTest.java:113)
+at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Failure 3 of 3
+java.lang.AssertionError: expected [Your registration completed.] but found [Your registration completed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Multiple failures (3):
+Failure 1 of 3
+java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertFalse(Assert.java:65)
+at org.testng.Assert.assertFalse(Assert.java:75)
+at commons.BaseTest.verifyFalse(BaseTest.java:99)
+at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Failure 2 of 3
+java.lang.AssertionError: expected [Last name is required] but found [Last name is required.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at commons.BaseTest.verifyEquals(BaseTest.java:113)
+at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Failure 3 of 3
+java.lang.AssertionError: expected [Your registration completed.] but found [Your registration completed]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at commons.BaseTest.verifyEquals(BaseTest.java:113)
+at com.nopcommerce.account.Level_16_Log.User_01_Register_Success(Level_16_Log.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Register - Step 01: Verify Register link is displayed<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------PASSED--------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------FAILED--------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 02: Click to Register link<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 03: Click to Register button<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 04: Verify error message at FirstName textbox is 'First name is required.'<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------PASSED--------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 05: Verify error message at LastName textbox is 'Last name is required'<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------PASSED--------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------FAILED--------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 06: Enter to First Name textbox with value is John<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 07: Enter to Last Name textbox with value is Kennedy<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 08: Enter to Email Address textbox with value is john95699@kennedy.us<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 09: Enter to Password textbox with value is 123456<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 10: Enter to Confirm Password textbox with value is 123456<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 11: Click to Register button<br>]]>
+            </line>
+            <line>
+              <![CDATA[Register - Step 12: Verify success message is displayed<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------PASSED--------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[------------------------FAILED--------------------<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_01_Register_Success -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.account.Level_16_Log@338c99c8]" started-at="2024-11-02T06:54:01Z" name="afterClass" finished-at="2024-11-02T06:54:04Z" duration-ms="2294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.account.Level_16_Log -->
+    </test> <!-- Run on Firefox -->
+    <test started-at="2024-11-02T06:54:04Z" name="Run on Chrome" finished-at="2024-11-02T06:54:04Z" duration-ms="3">
+      <class name="com.nopcommerce.account.Level_16_Log">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.account.Level_16_Log@3daf7722]" started-at="2024-11-02T06:54:04Z" name="beforeClass" finished-at="2024-11-02T06:54:04Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="User_01_Register_Success()[pri:0, instance:com.nopcommerce.account.Level_16_Log@3daf7722]" started-at="2024-11-02T06:54:04Z" name="User_01_Register_Success" finished-at="2024-11-02T06:54:04Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_01_Register_Success -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.account.Level_16_Log@3daf7722]" started-at="2024-11-02T06:54:04Z" name="afterClass" finished-at="2024-11-02T06:54:04Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.account.Level_16_Log -->
+    </test> <!-- Run on Chrome -->
+    <test started-at="2024-11-02T06:54:04Z" name="Run on Edge" finished-at="2024-11-02T06:54:04Z" duration-ms="2">
+      <class name="com.nopcommerce.account.Level_16_Log">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.account.Level_16_Log@2f67b837]" started-at="2024-11-02T06:54:04Z" name="beforeClass" finished-at="2024-11-02T06:54:04Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="User_01_Register_Success()[pri:0, instance:com.nopcommerce.account.Level_16_Log@2f67b837]" started-at="2024-11-02T06:54:04Z" name="User_01_Register_Success" finished-at="2024-11-02T06:54:04Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userUrl' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in E:\Automation Testing\03-Java Hybrid Framework\hybrid-framework-nopcommerce\resources\RunNopCommerce.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_01_Register_Success -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.account.Level_16_Log@2f67b837]" started-at="2024-11-02T06:54:04Z" name="afterClass" finished-at="2024-11-02T06:54:04Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.account.Level_16_Log -->
+    </test> <!-- Run on Edge -->
+  </suite> <!-- NopCommerce -->
+</testng-results>
