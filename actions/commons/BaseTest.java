@@ -128,6 +128,8 @@ public class BaseTest {
     @BeforeSuite
     public void deleteReportFolder() {
         deleteAllFileInFolder("htmlReportNG");
+        deleteAllFileInFolder("allure-results");
+        deleteAllFileInFolder("htmlAllure");
     }
 
     private void deleteAllFileInFolder(String folderName) {
