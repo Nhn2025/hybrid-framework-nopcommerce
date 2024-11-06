@@ -28,3 +28,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Ignore JSON files (configuration or sensitive data)
+*.json
+
+# Ignore log files (temporary debug information)
+*.log
