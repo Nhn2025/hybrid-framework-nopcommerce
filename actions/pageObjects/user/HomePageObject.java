@@ -45,4 +45,5 @@ public class HomePageObject extends BasePage {
         waitForElementVisible(driver, HomePageUI.REGISTER_LINK);
         return isELementDisplayed(driver, HomePageUI.REGISTER_LINK);
     }
+
 }
