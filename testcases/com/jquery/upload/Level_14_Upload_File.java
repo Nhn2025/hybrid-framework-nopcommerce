@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.jquery.PageGeneratorManager;
 import pageObjects.jquery.UploadPageObject;
-import pageUIs.user.BasePageUI;
+import pageUIs.user.BaseElementUI;
 
 public class Level_14_Upload_File extends BaseTest {
     WebDriver driver;
@@ -30,13 +30,13 @@ public class Level_14_Upload_File extends BaseTest {
 
     @Test
     public void TC_01_Upload_Single_File() {
-        uploadPage.uploadMultipleFiles(driver, BasePageUI.UPLOAD_FILE_NAME_BLUE, sua);
+        uploadPage.uploadMultipleFiles(driver, BaseElementUI.UPLOAD_FILE_NAME_BLUE, sua);
         uploadPage.sleepInSecond(2);
 
-        uploadPage.uploadMultipleFiles(driver, BasePageUI.UPLOAD_FILE_NAME_BLUE, tho);
+        uploadPage.uploadMultipleFiles(driver, BaseElementUI.UPLOAD_FILE_NAME_BLUE, tho);
         uploadPage.sleepInSecond(2);
 
-        uploadPage.uploadMultipleFiles(driver, BasePageUI.UPLOAD_FILE_NAME_BLUE, avatar);
+        uploadPage.uploadMultipleFiles(driver, BaseElementUI.UPLOAD_FILE_NAME_BLUE, avatar);
         uploadPage.sleepInSecond(2);
 
         Assert.assertTrue(uploadPage.isFileLoadedSuccess(sua));
@@ -54,7 +54,7 @@ public class Level_14_Upload_File extends BaseTest {
     public void TC_02_Upload_Multiple_File() {
         uploadPage.refreshCurrentPage(driver);
 
-        uploadPage.uploadMultipleFiles(driver, BasePageUI.UPLOAD_FILE_NAME_BLUE, fileNames);
+        uploadPage.uploadMultipleFiles(driver, BaseElementUI.UPLOAD_FILE_NAME_BLUE, fileNames);
 
         Assert.assertTrue(uploadPage.isFileLoadedSuccess(sua));
         Assert.assertTrue(uploadPage.isFileLoadedSuccess(tho));
@@ -77,7 +77,7 @@ public class Level_14_Upload_File extends BaseTest {
 
         Assert.assertTrue(uploadPage.isLoadingIconAtMainUploadDisappear());
 
-        uploadPage.uploadMultipleFiles(driver, BasePageUI.UPLOAD_FILE_NAME_GO_FILE, fileNames);
+        uploadPage.uploadMultipleFiles(driver, BaseElementUI.UPLOAD_FILE_NAME_GO_FILE, fileNames);
 
         Assert.assertTrue(uploadPage.isLoadingIconAtMainUploadDisappear());
 

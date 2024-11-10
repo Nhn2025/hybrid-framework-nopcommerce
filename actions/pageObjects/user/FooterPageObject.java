@@ -1,14 +1,16 @@
 package pageObjects.user;
 
+import commons.BaseElement;
 import commons.BasePage;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
 import pageUIs.user.FooterPageUI;
 
-public class FooterPageObject extends BasePage {
+public class FooterPageObject extends BaseElement {
     WebDriver driver;
 
     public FooterPageObject(WebDriver driver) {
+        super(driver);
         this.driver = driver;
     }
 

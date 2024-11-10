@@ -34,6 +34,3 @@ bin/
 
 # Ignore log files (temporary debug information)
 *.log
-
-# Ignore generated HTML files in build folder
-#*.html
