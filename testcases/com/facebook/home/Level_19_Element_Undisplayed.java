@@ -51,6 +51,7 @@ public class Level_19_Element_Undisplayed extends BaseTest {
 
     //@Test
     public void Home_03_Element_Undisplayed_Not_In_HTML() {
+        // Đổi giao diện không còn nút Close
         homePage.clickToCloseSignUpPopup();
         //driver.get("https://www.facebook.com/");
 
@@ -69,6 +70,7 @@ public class Level_19_Element_Undisplayed extends BaseTest {
 
     @Test
     public void Home_03_Element_Undisplayed_Not_In_HTML_02() {
+        // Đổi giao diện không còn nút Close
         homePage.clickToCloseSignUpPopup();
         //driver.get("https://www.facebook.com/");
 
