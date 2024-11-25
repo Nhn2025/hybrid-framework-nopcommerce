@@ -31,7 +31,6 @@ public class Level_21_Pattern_Object extends BaseTest {
 
     @Test
     public void User_01_Register_Empty_Data() {
-
         homePage.clickToHeaderLinkByName("Register");
         registerPage = PageGeneratorManager.getRegisterPage(driver);
 

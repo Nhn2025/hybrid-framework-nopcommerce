@@ -42,6 +42,13 @@ public class HomePageObject extends BaseElement {
         clickToElement(driver, HomePageUI.LOG_OUT_LINK);
     }
 
+    @Step("Open My Account Link")
+    public CustomerPageObject openMyAccountLink() {
+        String myAccountLink = getElementAtrribute(driver, HomePageUI.MY_ACCOUNT_LINK, "href");
+        openPageUrl(driver, myAccountLink);
+        return PageGeneratorManager.getCustomerPage(driver);
+    }
+
     @Step("Verify Register link is displayed")
     public boolean isRegisterLinkDisplayed() {
         waitForElementVisible(driver, HomePageUI.REGISTER_LINK);
