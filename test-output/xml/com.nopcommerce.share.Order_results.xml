@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="6"
+           time="0.000">
+  <properties />
+  
+            <testcase name="beforeClass" time="0.0" classname="com.nopcommerce.share.Order">
+          <skipped />
+    </testcase>
+            <testcase name="afterClass" time="0.0" classname="com.nopcommerce.share.Order">
+          <skipped />
+    </testcase>
+            <testcase name="Order_01_Invalid_Address" time="0.0" classname="com.nopcommerce.share.Order">
+          <skipped />
+    </testcase>
+            <testcase name="Order_03_Invalid_Phone" time="0.0" classname="com.nopcommerce.share.Order">
+          <skipped />
+    </testcase>
+            <testcase name="Order_02_Invalid_SSN" time="0.0" classname="com.nopcommerce.share.Order">
+          <skipped />
+    </testcase>
+            <testcase name="Order_04_Success" time="0.0" classname="com.nopcommerce.share.Order">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

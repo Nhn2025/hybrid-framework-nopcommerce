@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.033">
+  <properties />
+  
+  
+            <testcase name="Order_02_Invalid_SSN" time="0.004" classname="com.nopcommerce.cookie.Order" />
+                <testcase name="Order_03_Invalid_Phone" time="0.002" classname="com.nopcommerce.cookie.Order" />
+                <testcase name="Order_01_Invalid_Address" time="0.026" classname="com.nopcommerce.cookie.Order" />
+                <testcase name="Order_04_Success" time="0.001" classname="com.nopcommerce.cookie.Order" />
+      
+</testsuite>
