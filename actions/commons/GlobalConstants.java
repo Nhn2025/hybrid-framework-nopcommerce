@@ -38,4 +38,10 @@ public class GlobalConstants {
     // Data Test/ Enviroment
     public static final String DATA_TEST_PATH = PROJECT_PATH + SEPARATOR + "dataTest" + SEPARATOR;
     public static final String ENVIROMENT_CONFIG_PATH = PROJECT_PATH + SEPARATOR + "enviromentConfig" + SEPARATOR;
+
+    //
+    public static final String JIRA_SITE_URL = "https://dnhu-automation.atlassian.net";
+    public static final String JIRA_USERNAME = "dnhu122025@gmail.com";
+    public static final String JIRA_API_KEY = "ATATT3xFfGF05rVyAkWHHfeLs8aCR6Pt9tOsJpb4KH-gTCqY4MZVDzxr73qpNrY_V70iEEUbx0shIXB1i_VsC9P1UYXynLVRgHjU0O62zubadSnkRZ89cVEcpTl7BDz7eifdlRELygM18iLT4YSPsyNQhHPQNzK9W23pKbYG-aObnHn1sNafw-k=B769095F";
+    public static final String JIRA_PROJECT_KEY = "SCRUM";
 }

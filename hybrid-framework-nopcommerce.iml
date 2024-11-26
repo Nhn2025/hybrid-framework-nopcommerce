@@ -17,5 +17,6 @@
     <orderEntry type="library" name="libReportNG" level="project" />
     <orderEntry type="library" name="libExtent5" level="project" />
     <orderEntry type="library" name="libAllure" level="project" />
+    <orderEntry type="library" name="libJIRA" level="project" />
   </component>
 </module>

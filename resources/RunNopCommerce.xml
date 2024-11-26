@@ -10,8 +10,8 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
 
-<!--    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>-->
-<!--    <parameter name="userUrl" value="http://demo.nopcommerce"/>-->
+    <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
+    <parameter name="userUrl" value="http://demo.nopcommerce"/>
 
     <test name="Run on Firefox" preserve-order="true">
         <parameter name="browser" value="firefox"/>
