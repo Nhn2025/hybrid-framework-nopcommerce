@@ -33,7 +33,6 @@ public class Level_22_JIRA extends BaseTest {
         homePage = PageGeneratorManager.getHomePage(driver);
     }
 
-    //
     @JiraCreateIssueService.JiraCreateIssue(isCreateIssue = true)
     @Test
     public void User_01_Register_Success() {
