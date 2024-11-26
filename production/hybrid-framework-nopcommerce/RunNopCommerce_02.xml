@@ -10,10 +10,17 @@
     <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
     <parameter name="userUrl" value="http://demo.nopcommerce"/>
 
-    <test name="Run on Firefox">
-        <parameter name="browser" value="firefox"/>
+<!--    <test name="Run on Firefox">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="com.nopcommerce.account.Level_23_Close_Browser"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.nopcommerce.account.Level_22_JIRA"/>
+            <class name="com.nopcommerce.account.Level_23_Close_Browser"/>
         </classes>
     </test>
 

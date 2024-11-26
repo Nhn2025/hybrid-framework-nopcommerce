@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import pageObjects.user.HomePageObject;
 import pageObjects.user.RegisterPageObject;
 
-public class Level_22_JIRA extends BaseTest {
+public class Level_22_Jira extends BaseTest {
     private WebDriver driver;
     HomePageObject homePage;
     RegisterPageObject registerPage;
