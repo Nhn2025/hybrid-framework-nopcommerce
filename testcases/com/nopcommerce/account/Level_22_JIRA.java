@@ -32,7 +32,7 @@ public class Level_22_JIRA extends BaseTest {
         password = "123456";
         homePage = PageGeneratorManager.getHomePage(driver);
     }
-//cm
+
     @JiraCreateIssueService.JiraCreateIssue(isCreateIssue = true)
     @Test
     public void User_01_Register_Success() {
