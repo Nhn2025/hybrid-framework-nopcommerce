@@ -32,7 +32,7 @@ public class Level_18_AllureReport extends BaseTest {
     @Parameters({"browser", "adminUrl", "userUrl"})
     @BeforeClass
     public void beforeClass(String browserName, String adminURL, String userURL) {
-        driver = getBrowserDriver(browserName,userURL);
+        driver = getBrowserDriver(browserName, userURL);
         this.adminURL = adminURL;
         this.userURL = userURL;
 
@@ -56,7 +56,7 @@ public class Level_18_AllureReport extends BaseTest {
 
         Assert.assertEquals(registerPage.getFirstNameErrorMessageText(), "First name is required.");
 
-        Assert.assertEquals(registerPage.getLastNameErrorMessageText(), "Last name is required");
+        Assert.assertEquals(registerPage.getLastNameErrorMessageText(), "Last name is requ");
 
         registerPage.enterToFirstNameTextbox(firstName);
 

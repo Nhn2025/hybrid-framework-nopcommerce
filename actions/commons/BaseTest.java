@@ -6,8 +6,11 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -61,6 +64,22 @@ public class BaseTest {
             driver = new ChromeDriver();
         else if (browser == BrowserList.EDGE)
             driver = new EdgeDriver();
+        else if (browser == BrowserList.HFIREFOX) {
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("-headless");
+            options.addArguments("window-size=1920x1080");
+            driver = new FirefoxDriver(options);
+        } else if (browser == BrowserList.HCHROME) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("-headless");
+            options.addArguments("window-size=1920x1080");
+            driver = new ChromeDriver(options);
+        } else if (browser == BrowserList.HEDGE) {
+            EdgeOptions options = new EdgeOptions();
+            options.addArguments("-headless");
+            options.addArguments("window-size=1920x1080");
+            driver = new EdgeDriver(options);
+        }
         else
             throw new RuntimeException("Browser name is not valid.");
 
