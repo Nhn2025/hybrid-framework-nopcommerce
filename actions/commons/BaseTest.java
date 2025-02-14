@@ -17,6 +17,8 @@ import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.Random;
 
@@ -56,29 +58,104 @@ public class BaseTest {
 
     protected WebDriver getBrowserDriver(String browserName, String url) {
 
-        BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        Path path = null;
+        File extensionFilePath = null;
 
-        if (browser == BrowserList.FIREFOX)
+        switch (browserList) {
+            case FIREFOX:
+                driver = new FirefoxDriver();
+                Path xpiPath = Paths.get(GlobalConstants.BROWSER_EXTENSION_PATH + "Wappalyzer.xpi");
+                FirefoxDriver ffDriver = (FirefoxDriver) driver;
+                ffDriver.installExtension(xpiPath);
+                driver = ffDriver;
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                path = Paths.get(GlobalConstants.BROWSER_EXTENSION_PATH + "Wappalyzer.crx");
+                extensionFilePath = new File(path.toUri());
+                chromeOptions.addExtensions(extensionFilePath);
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+                path = Paths.get(GlobalConstants.BROWSER_EXTENSION_PATH + "Wappalyzer.crx");
+                extensionFilePath = new File(path.toUri());
+                edgeOptions.addExtensions(extensionFilePath);
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            case HFIREFOX:
+                FirefoxOptions hfFirefoxOptions = new FirefoxOptions();
+                hfFirefoxOptions.addArguments("-headless");
+                hfFirefoxOptions.addArguments("window-size=1920x1080");
+                driver = new FirefoxDriver(hfFirefoxOptions);
+                break;
+            case HCHROME:
+                ChromeOptions hChromeOptions = new ChromeOptions();
+                hChromeOptions.addArguments("-headless");
+                hChromeOptions.addArguments("window-size=1920x1080");
+                driver = new ChromeDriver(hChromeOptions);
+                break;
+            case HEDGE:
+                EdgeOptions hEdgeOptions = new EdgeOptions();
+                hEdgeOptions.addArguments("-headless");
+                hEdgeOptions.addArguments("window-size=1920x1080");
+                driver = new EdgeDriver(hEdgeOptions);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    protected WebDriver getBrowserDriverV2(String browserName, String url) {
+
+        BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+        Path path = null;
+        File extensionFilePath = null;
+
+        if (browser == BrowserList.FIREFOX) {
             driver = new FirefoxDriver();
-        else if (browser == BrowserList.CHROME)
-            driver = new ChromeDriver();
-        else if (browser == BrowserList.EDGE)
-            driver = new EdgeDriver();
+            Path xpiPath = Paths.get(GlobalConstants.BROWSER_EXTENSION_PATH + "Wappalyzer.xpi");
+            FirefoxDriver ffDriver = (FirefoxDriver) driver;
+            ffDriver.installExtension(xpiPath);
+            driver = ffDriver;
+        }
+        else if (browser == BrowserList.CHROME) {
+            ChromeOptions chromeOptions = new ChromeOptions();
+            path = Paths.get(GlobalConstants.BROWSER_EXTENSION_PATH + "Wappalyzer.crx");
+            extensionFilePath = new File(path.toUri());
+            chromeOptions.addExtensions(extensionFilePath);
+            driver = new ChromeDriver(chromeOptions);
+        }
+        else if (browser == BrowserList.EDGE) {
+            EdgeOptions edgeOptions = new EdgeOptions();
+            path = Paths.get(GlobalConstants.BROWSER_EXTENSION_PATH + "Wappalyzer.crx");
+            extensionFilePath = new File(path.toUri());
+            edgeOptions.addExtensions(extensionFilePath);
+            driver = new EdgeDriver(edgeOptions);
+        }
         else if (browser == BrowserList.HFIREFOX) {
-            FirefoxOptions options = new FirefoxOptions();
-            options.addArguments("-headless");
-            options.addArguments("window-size=1920x1080");
-            driver = new FirefoxDriver(options);
+            FirefoxOptions hFirefoxOptions = new FirefoxOptions();
+            hFirefoxOptions.addArguments("-headless");
+            hFirefoxOptions.addArguments("window-size=1920x1080");
+            driver = new FirefoxDriver(hFirefoxOptions);
         } else if (browser == BrowserList.HCHROME) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("-headless");
-            options.addArguments("window-size=1920x1080");
-            driver = new ChromeDriver(options);
+            ChromeOptions hChromeOptions = new ChromeOptions();
+            hChromeOptions.addArguments("-headless");
+            hChromeOptions.addArguments("window-size=1920x1080");
+            driver = new ChromeDriver(hChromeOptions);
         } else if (browser == BrowserList.HEDGE) {
-            EdgeOptions options = new EdgeOptions();
-            options.addArguments("-headless");
-            options.addArguments("window-size=1920x1080");
-            driver = new EdgeDriver(options);
+            EdgeOptions hEdgeOptions = new EdgeOptions();
+            hEdgeOptions.addArguments("-headless");
+            hEdgeOptions.addArguments("window-size=1920x1080");
+            driver = new EdgeDriver(hEdgeOptions);
         }
         else
             throw new RuntimeException("Browser name is not valid.");

@@ -16,6 +16,7 @@ public class Level_24_Browser_Config extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String url) {
         driver = getBrowserDriver(browserName, url);
+        driver.manage().window().maximize();
     }
 
     @Test
@@ -24,6 +25,6 @@ public class Level_24_Browser_Config extends BaseTest {
 
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowser();
+        //closeBrowser();
     }
 }
