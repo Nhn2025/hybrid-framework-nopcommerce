@@ -8,7 +8,8 @@
     </listeners>
 
     <parameter name="adminUrl" value="http://demo.nopcommerce/login?ReturnUrl=%2Fadmin"/>
-    <parameter name="userUrl" value="http://demo.nopcommerce"/>
+<!--    <parameter name="userUrl" value="http://demo.nopcommerce"/>-->
+    <parameter name="userUrl" value="https://rode.com/en/support/where-to-buy"/>
 
 <!--    <test name="Run on Firefox" preserve-order="true">-->
 <!--        <parameter name="browser" value="firefox"/>-->
