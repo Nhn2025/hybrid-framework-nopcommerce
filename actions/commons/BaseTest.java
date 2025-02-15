@@ -6,11 +6,13 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.ChromiumDriverLogLevel;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriverService;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.*;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -20,7 +22,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
-import java.util.Random;
+import java.util.*;
 
 public class BaseTest {
 
@@ -56,7 +58,278 @@ public class BaseTest {
         return driver;
     }
 
+    // Automation Info Bar
     protected WebDriver getBrowserDriver(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                driver = new FirefoxDriver();
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setExperimentalOption("useAutomationExtension", false);
+                chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.setExperimentalOption("useAutomationExtension", false);
+                edgeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Location popup
+    protected WebDriver getBrowserDriverLocationPopup(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addPreference("geo.enabled", false);
+                firefoxOptions.addPreference("geo.provider.user_corelocation", false);
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--disable-geolocation");
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--disable-geolocation");
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Disable Save address (Chrome/ Edge)
+    protected WebDriver getBrowserDriverDisableSaveAddress(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addPreference("dom.webnotifications.enabled", false);
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+            case CHROME:
+                Map<String, Object> cprefs = new HashMap<String, Object>();
+                cprefs.put("profile.default_content_setting_values.notifications", 2);
+                cprefs.put("credentials_enable_service", false);
+                cprefs.put("profile.password_manager_enabled", false);
+                cprefs.put("autofill.profile_enabled", false);
+
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setExperimentalOption("prefs", cprefs);
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case EDGE:
+                Map<String, Object> eprefs = new HashMap<String, Object>();
+                eprefs.put("profile.default_content_setting_values.notifications", 2);
+                eprefs.put("credentials_enable_service", false);
+                eprefs.put("profile.password_manager_enabled", false);
+                eprefs.put("autofill.profile_enabled", false);
+
+                EdgeOptions edgOptions = new EdgeOptions();
+                edgOptions.setExperimentalOption("prefs", eprefs);
+                driver = new EdgeDriver(edgOptions);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Disable notifications
+    protected WebDriver getBrowserDriverDisableNotifications(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addPreference("dom.webnotifications.enabled", false);
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--disable-notifications");
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--disable-notifications");
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Localization
+    protected WebDriver getBrowserDriverLocalization(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addPreference("intl.accept_languages", "vi-vn, vi");
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--lang=vi");
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--lang=vi");
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Log to Level
+    protected WebDriver getBrowserDriverLogLevel(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                System.setProperty(GeckoDriverService.GECKO_DRIVER_LOG_PROPERTY, GlobalConstants.BROWSER_LOG_PATH + "FirefoxPropertyLog.log");
+                FirefoxDriverService fService = new GeckoDriverService.Builder().withLogLevel(FirefoxDriverLogLevel.DEBUG).build();
+                driver = new FirefoxDriver(fService);
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+
+                System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, GlobalConstants.BROWSER_LOG_PATH + "ChromePropertyLog.log");
+                ChromeDriverService cService = new ChromeDriverService.Builder().withLogLevel(ChromiumDriverLogLevel.DEBUG).build();
+                driver = new ChromeDriver(cService);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+
+                System.setProperty(EdgeDriverService.EDGE_DRIVER_LOG_PROPERTY, GlobalConstants.BROWSER_LOG_PATH + "EdgePropertyLog.log");
+                EdgeDriverService eService = new EdgeDriverService.Builder().withLoglevel(ChromiumDriverLogLevel.DEBUG).build();
+                driver = new EdgeDriver(eService);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Log to Console
+    protected WebDriver getBrowserDriverLogConsole(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                FirefoxDriverService fService = new GeckoDriverService.Builder().withLogOutput(System.out).build();
+                driver = new FirefoxDriver(fService);
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+
+                ChromeDriverService cService = new ChromeDriverService.Builder().withLogOutput(System.out).build();
+                driver = new ChromeDriver(cService);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+
+                EdgeDriverService eService = new EdgeDriverService.Builder().withLogOutput(System.out).build();
+                driver = new EdgeDriver(eService);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Log to File
+    protected WebDriver getBrowserDriverLogFile(String browserName, String url) {
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        switch (browserList) {
+            case FIREFOX:
+                FirefoxDriverService fService = new GeckoDriverService.Builder().withLogFile(
+                        new File(GlobalConstants.BROWSER_LOG_PATH + "FirefoxLog.log")).build();
+                driver = new FirefoxDriver(fService);
+                break;
+            case CHROME:
+                ChromeOptions chromeOptions = new ChromeOptions();
+
+                ChromeDriverService cService = new ChromeDriverService.Builder().withLogFile(
+                        new File(GlobalConstants.BROWSER_LOG_PATH + "ChromeLog.log")).build();
+                driver = new ChromeDriver(cService);
+                break;
+            case EDGE:
+                EdgeOptions edgeOptions = new EdgeOptions();
+
+                EdgeDriverService eService = new EdgeDriverService.Builder().withLogFile(
+                        new File(GlobalConstants.BROWSER_LOG_PATH + "EdgeLog.log")).build();
+                driver = new EdgeDriver(eService);
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid.");
+        }
+
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
+        return driver;
+    }
+
+    // Extension & HeadLess
+    protected WebDriver getBrowserDriverExtensionHeadLess(String browserName, String url) {
 
         BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
         Path path = null;
@@ -114,7 +387,7 @@ public class BaseTest {
         return driver;
     }
 
-    protected WebDriver getBrowserDriverV2(String browserName, String url) {
+    protected WebDriver getBrowserDriverIf(String browserName, String url) {
 
         BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
         Path path = null;
