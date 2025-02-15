@@ -34,3 +34,17 @@ bin/
 
 # Ignore log files (temporary debug information)
 *.log
+
+# Bỏ qua tất cả các file .class (file biên dịch Java)
+*.class
+
+# Bỏ qua file test report và output
+test-output/
+*.xml
+
+# Bỏ qua tất cả file build tự động
+*.tmp
+*.out
+
+# Bỏ qua thư mục build nếu có
+/build/
