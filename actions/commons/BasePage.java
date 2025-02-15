@@ -183,15 +183,27 @@ public class BasePage {
     }
 
     public void clickToElement(WebDriver driver, String locator) {
-        getWebElement(driver, locator).click();
+        if (driver.toString().contains("InternetExplorer")) {
+            clickToElementByJS(driver, locator);
+            sleepInSeconds(2);
+        } else
+            getWebElement(driver, locator).click();
     }
 
     public void clickToElement(WebDriver driver, WebElement element) {
-        element.click();
+        if (driver.toString().contains("InternetExplorer")) {
+            clickToElementByJS(driver, element);
+            sleepInSeconds(2);
+        } else
+            element.click();
     }
 
     public void clickToElement(WebDriver driver, String locator, String... restParams) {
-        getWebElement(driver, getDynamicLocator(locator, restParams)).click();
+        if (driver.toString().contains("InternetExplorer")) {
+            clickToElementByJS(driver, getDynamicLocator(locator, restParams));
+            sleepInSeconds(2);
+        } else
+            getWebElement(driver, getDynamicLocator(locator, restParams)).click();
     }
 
     public void sendKeyToElement(WebDriver driver, String locator, String valueToSend, String... restParams) {
@@ -389,7 +401,7 @@ public class BasePage {
         sleepInSecond(3);
     }
 
-    public void hightlightElement(WebDriver driver, String locator) {
+    public void highLightElement(WebDriver driver, String locator) {
         WebElement element = getWebElement(driver, locator);
         String originalStyle = element.getAttribute("style");
         ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('style', arguments[1])", element, "border: 2px solid red; border-style: dashed;");
@@ -399,6 +411,11 @@ public class BasePage {
 
     public void clickToElementByJS(WebDriver driver, String locator) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", getWebElement(driver, locator));
+        sleepInSecond(3);
+    }
+
+    public void clickToElementByJS(WebDriver driver, WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
         sleepInSecond(3);
     }
 
@@ -418,7 +435,7 @@ public class BasePage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, locator));
     }
 
-    public void sendkeyToElementByJS(WebDriver driver, String locator, String value) {
+    public void sendKeyToElementByJS(WebDriver driver, String locator, String value) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('value', '" + value + "')", getWebElement(driver, locator));
     }
 
